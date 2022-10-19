@@ -20,7 +20,7 @@ Install fzf and other dependencies
 
 Install typescritp server
 
-`npm i -g typescript-server-config`
+`npm i -g typescript-server-config eslint_d`
 
 Enter on neovim and install packages
 
