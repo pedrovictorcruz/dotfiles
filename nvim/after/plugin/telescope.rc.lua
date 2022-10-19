@@ -2,6 +2,7 @@ local status, telescope = pcall(require, "telescope")
 if (not status) then return end
 local actions = require('telescope.actions')
 local builtin = require("telescope.builtin")
+local action_layout = require("telescope.actions.layout")
 
 local function telescope_buffer_dir()
   return vim.fn.expand('%:p:h')
@@ -13,9 +14,13 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 telescope.setup {
   defaults = {
     file_ignore_patterns = { "node_modules", "dist", ".git" },
+    previewer = false,
     mappings = {
       n = {
         ["q"] = actions.close
+      },
+      i = {
+        ["?"] = action_layout.toggle_preview,
       },
     },
   },

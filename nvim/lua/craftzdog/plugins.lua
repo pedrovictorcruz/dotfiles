@@ -12,6 +12,7 @@ packer.startup(function(use)
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
+  use 'krfl/fleetish-vim'
   use 'folke/tokyonight.nvim'
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
@@ -35,6 +36,8 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+  use { 'ibhagwan/fzf-lua' }
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
