@@ -11,6 +11,7 @@ Create config dir:
 Clone this directory to `.config` dir
 
 `cd ~/.config`
+
 `git clone git@github.com:pedrovictorcruz/dotfiles.git .`
 
 Install fzf and other dependencies
