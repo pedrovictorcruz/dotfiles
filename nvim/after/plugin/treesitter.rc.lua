@@ -2,19 +2,19 @@ local status, ts = pcall(require, "nvim-treesitter.configs")
 if (not status) then return end
 
 ts.setup {
-  rainbow = {
-    enable = true,
-    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-    max_file_lines = nil, -- Do not enable for files with more than n lines, int
-  },
   highlight = {
-    enable = false,
+    enable = true,
+    disable = {},
   },
   indent = {
     enable = true,
+    disable = {},
   },
   ensure_installed = {
+    "markdown",
+    "markdown_inline",
     "tsx",
+    "typescript",
     "toml",
     "fish",
     "php",
@@ -23,23 +23,15 @@ ts.setup {
     "swift",
     "css",
     "html",
-    "lua",
-    "vim",
-    "php",
-    "rust",
-    "javascript",
-    "typescript",
-    "scss",
+    "lua"
   },
   autotag = {
     enable = true,
-    filetypes = {
-      "html",
-      "javascript",
-      "typescript",
-      "markdown",
-    },
   },
+  context_commentstring = {
+    enable         = true,
+    enable_autocmd = false,
+  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
