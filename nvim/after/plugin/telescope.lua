@@ -1,3 +1,16 @@
+local file_ignore_patterns = {
+    "yarn%.lock",
+    "node_modules/",
+    "raycast/",
+    "dist/",
+    "%.next",
+    "%.git/",
+    "%.gitlab/",
+    "build/",
+    "target/",
+    "package%-lock%.json",
+}
+
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
