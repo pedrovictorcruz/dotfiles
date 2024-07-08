@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruber.vim"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gruber.vim",
+    url = "https://github.com/m6vrm/gruber.vim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",

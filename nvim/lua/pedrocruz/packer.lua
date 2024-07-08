@@ -14,6 +14,8 @@ return require('packer').startup(function(use)
 
     use('mbbill/undotree')
 
+    use('m6vrm/gruber.vim')
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
