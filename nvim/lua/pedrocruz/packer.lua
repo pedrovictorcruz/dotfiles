@@ -44,32 +44,4 @@ return require("packer").startup(function(use)
     use("lewis6991/gitsigns.nvim")
     use("romgrk/barbar.nvim")
 
-    use({
-        "epwalsh/obsidian.nvim",
-        tag = "*", -- recommended, use latest release instead of latest commit
-        requires = {
-            -- Required.
-            "nvim-lua/plenary.nvim",
-
-            -- see below for full list of optional dependencies 👇
-        },
-        config = function()
-            require("obsidian").setup({
-                ui = {
-                    enable = false
-                },
-                workspaces = {
-                    {
-                        name = "personal",
-                        path = "~/vaults/personal",
-                    },
-                    {
-                        name = "work",
-                        path = "~/vaults/work",
-                    },
-                },
-
-            })
-        end,
-    })
 end)
