@@ -11,6 +11,8 @@ return require("packer").startup(function(use)
         requires = { { "nvim-lua/plenary.nvim" } },
     })
 
+    use("nvim-telescope/telescope-file-browser.nvim")
+
     use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
     use("mbbill/undotree")
@@ -40,8 +42,16 @@ return require("packer").startup(function(use)
         },
     })
 
+    use("rose-pine/neovim", {
+        name = "rose-pine",
+    })
+    use("rebelot/kanagawa.nvim")
+
     use("nvim-tree/nvim-web-devicons")
     use("lewis6991/gitsigns.nvim")
     use("romgrk/barbar.nvim")
-
+    use("joerdav/templ.vim")
+    use("jose-elias-alvarez/null-ls.nvim")
+    use("numToStr/Comment.nvim")
+    use("feline-nvim/feline.nvim")
 end)
