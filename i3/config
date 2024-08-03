@@ -18,7 +18,7 @@ font pango:monospace 15px
 # GET DEM BORDERS OUT OF HEREc:w
 #
 # Thanks Childz
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
                           # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
@@ -179,7 +179,7 @@ bindsym $mod+Shift+period exec systemctl suspend
 
 exec --no-startup-id xrandr --output DP-0 --mode 2560x1440 --rate 169.83
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #interactive screenshot by pressing printscreen
 bindsym Print exec gnome-screenshot -i 
