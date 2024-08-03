@@ -53,7 +53,6 @@ return require("packer").startup(function(use)
     use("joerdav/templ.vim")
     use("jose-elias-alvarez/null-ls.nvim")
     use("numToStr/Comment.nvim")
-    use("feline-nvim/feline.nvim")
     use({
         "jose-elias-alvarez/null-ls.nvim",
         requires = { "nvim-lua/plenary.nvim" },
