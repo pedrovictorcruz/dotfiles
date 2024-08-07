@@ -17,7 +17,7 @@ return require("packer").startup(function(use)
 
     use("mbbill/undotree")
 
-    use("m6vrm/gruber.vim")
+    use("blazkowolf/gruber-darker.nvim")
 
     use({
         "VonHeikemen/lsp-zero.nvim",
@@ -49,12 +49,13 @@ return require("packer").startup(function(use)
 
     use("nvim-tree/nvim-web-devicons")
     use("lewis6991/gitsigns.nvim")
-    use("romgrk/barbar.nvim")
+    -- use("romgrk/barbar.nvim")
     use("joerdav/templ.vim")
-    use("jose-elias-alvarez/null-ls.nvim")
     use("numToStr/Comment.nvim")
+    use("Mofiqul/vscode.nvim")
     use({
         "jose-elias-alvarez/null-ls.nvim",
         requires = { "nvim-lua/plenary.nvim" },
     })
+    use('ThePrimeagen/harpoon')
 end)

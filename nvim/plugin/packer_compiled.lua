@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["barbar.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-    url = "https://github.com/romgrk/barbar.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -124,10 +119,15 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["gruber.vim"] = {
+  ["gruber-darker.nvim"] = {
     loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gruber.vim",
-    url = "https://github.com/m6vrm/gruber.vim"
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gruber-darker.nvim",
+    url = "https://github.com/blazkowolf/gruber-darker.nvim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
@@ -208,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 

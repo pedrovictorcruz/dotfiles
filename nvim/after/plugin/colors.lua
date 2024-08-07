@@ -1,19 +1,6 @@
-require("rose-pine").setup({
-    disable_background = true,
-    highlight_groups = {
-        Normal = { bg = "none" },
-        NormalNC = { bg = "none" },
-    },
-})
-
 function ColorMyPencils(color)
-    color = color or "kanagawa-dragon"
+    color = color or "gruber-darker"
     vim.cmd.colorscheme(color)
-
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
-    -- vim.cmd('hi! link SignColumn Normal')
 end
 
 ColorMyPencils()
