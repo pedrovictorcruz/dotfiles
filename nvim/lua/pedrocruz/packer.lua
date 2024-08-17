@@ -17,7 +17,15 @@ return require("packer").startup(function(use)
 
     use("mbbill/undotree")
 
-    use("blazkowolf/gruber-darker.nvim")
+    use({
+        "blazkowolf/gruber-darker.nvim",
+        opts = {
+            bold = false,
+            italic = {
+                strings = false,
+            },
+        },
+    })
 
     use({
         "VonHeikemen/lsp-zero.nvim",
@@ -42,20 +50,20 @@ return require("packer").startup(function(use)
         },
     })
 
-    use("rose-pine/neovim", {
-        name = "rose-pine",
-    })
-    use("rebelot/kanagawa.nvim")
-
     use("nvim-tree/nvim-web-devicons")
     use("lewis6991/gitsigns.nvim")
-    -- use("romgrk/barbar.nvim")
-    use("joerdav/templ.vim")
+    use("romgrk/barbar.nvim")
     use("numToStr/Comment.nvim")
-    use("Mofiqul/vscode.nvim")
     use({
         "jose-elias-alvarez/null-ls.nvim",
         requires = { "nvim-lua/plenary.nvim" },
     })
-    use('ThePrimeagen/harpoon')
+
+    use({
+        "akinsho/toggleterm.nvim",
+        tag = '*',
+        config = function()
+            require("toggleterm").setup()
+        end
+    })
 end)
