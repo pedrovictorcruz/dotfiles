@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/pedro/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/home/pedro/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/home/pedro/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/home/pedro/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/pedro/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/home/pedro/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/pedro/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/pedro/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/pedro/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/pedro/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -125,6 +125,7 @@ _G.packer_plugins = {
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruber-darker.nvim"] = {
+    config = { "\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\fstrings\1\nfolds\2\14operators\1\rcomments\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0" },
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gruber-darker.nvim",
     url = "https://github.com/blazkowolf/gruber-darker.nvim"
@@ -133,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lua-utils.nvim"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/lua-utils.nvim",
+    url = "https://github.com/nvim-neorg/lua-utils.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -143,6 +149,22 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  neorg = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/neorg",
+    url = "https://github.com/nvim-neorg/neorg"
+  },
+  neovim = {
+    config = { "\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1%extend_background_behind_borders\2\nsetup\14rose-pine\frequire\0" },
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -159,6 +181,11 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -174,10 +201,20 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["pathlib.nvim"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/pathlib.nvim",
+    url = "https://github.com/pysan3/pathlib.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/project.nvim",
+    url = "https://github.com/ahmedkhalf/project.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
@@ -190,7 +227,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -203,10 +239,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
+-- Config for: neovim
+time([[Config for neovim]], true)
+try_loadstring("\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1%extend_background_behind_borders\2\nsetup\14rose-pine\frequire\0", "config", "neovim")
+time([[Config for neovim]], false)
+-- Config for: gruber-darker.nvim
+time([[Config for gruber-darker.nvim]], true)
+try_loadstring("\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\fstrings\1\nfolds\2\14operators\1\rcomments\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0", "config", "gruber-darker.nvim")
+time([[Config for gruber-darker.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
