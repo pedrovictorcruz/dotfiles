@@ -14,7 +14,6 @@ local file_ignore_patterns = {
 local builtin = require('telescope.builtin')
 
 require('telescope').load_extension('file_browser')
-require('telescope').load_extension('projects')
 
 require('telescope').setup {
   defaults = {
@@ -30,6 +29,8 @@ vim.keymap.set('n', ';;', function()
   builtin.find_files({
     file_ignore_patterns = file_ignore_patterns,
     previewer = false,
+    path = "%:p:h",
+    hidden = true,
   })
 end, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})

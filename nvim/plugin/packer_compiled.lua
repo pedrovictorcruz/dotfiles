@@ -79,112 +79,16 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  LuaSnip = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  ["barbar.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-    url = "https://github.com/romgrk/barbar.nvim"
-  },
-  ["cmp-buffer"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-nvim-lua"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
-    url = "https://github.com/hrsh7th/cmp-nvim-lua"
-  },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruber-darker.nvim"] = {
-    config = { "\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\fstrings\1\nfolds\2\14operators\1\rcomments\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0" },
+    config = { "\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\rcomments\2\14operators\1\nfolds\2\fstrings\1\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0" },
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gruber-darker.nvim",
     url = "https://github.com/blazkowolf/gruber-darker.nvim"
-  },
-  ["lsp-zero.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
-  ["lua-utils.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/lua-utils.nvim",
-    url = "https://github.com/nvim-neorg/lua-utils.nvim"
-  },
-  ["mason-lspconfig.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
-  },
-  neorg = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/neorg",
-    url = "https://github.com/nvim-neorg/neorg"
-  },
-  neovim = {
-    config = { "\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1%extend_background_behind_borders\2\nsetup\14rose-pine\frequire\0" },
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/neovim",
-    url = "https://github.com/rose-pine/neovim"
-  },
-  ["nui.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nui.nvim",
-    url = "https://github.com/MunifTanjim/nui.nvim"
-  },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-nio"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/nvim-nio",
-    url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -201,20 +105,10 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["pathlib.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/pathlib.nvim",
-    url = "https://github.com/pysan3/pathlib.nvim"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["project.nvim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
@@ -239,13 +133,9 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: neovim
-time([[Config for neovim]], true)
-try_loadstring("\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1%extend_background_behind_borders\2\nsetup\14rose-pine\frequire\0", "config", "neovim")
-time([[Config for neovim]], false)
 -- Config for: gruber-darker.nvim
 time([[Config for gruber-darker.nvim]], true)
-try_loadstring("\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\fstrings\1\nfolds\2\14operators\1\rcomments\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0", "config", "gruber-darker.nvim")
+try_loadstring("\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\rcomments\2\14operators\1\nfolds\2\fstrings\1\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0", "config", "gruber-darker.nvim")
 time([[Config for gruber-darker.nvim]], false)
 
 _G._packer.inside_compile = false

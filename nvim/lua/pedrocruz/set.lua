@@ -33,3 +33,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.opt.ttimeoutlen = 50
+
+vim.env.TERM = "xterm-256color"
+vim.env.COLORTERM = "truecolor"
+
