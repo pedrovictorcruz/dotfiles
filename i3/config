@@ -179,15 +179,6 @@ exec --no-startup-id xrandr --output DP-0 --mode 2560x1440 --rate 169.83
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 
-exec --no-startup-id feh --bg-scale $HOME/Pictures/wallpapers/Desert.png
-
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-#interactive screenshot by pressing printscreen
-bindsym Print exec gnome-screenshot -i 
-#crop-area screenshot by pressing Mod + printscreen
-bindsym $mod+Print exec gnome-screenshot -a
-
 bar {
         status_command i3status
 }

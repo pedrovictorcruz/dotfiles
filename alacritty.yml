@@ -1,13 +1,14 @@
 live_config_reload: true
-# shell:
-#   program: tmux
+shell:
+  program: tmux
 window:
   dynamic_title: true
-  startup_mode: Maximized
+  startup_mode: Windowed
 font:
   normal:
     family: "Iosevka nerd font"
-  size: 27
+    # family: "JetBrainsMono Nerd Font"
+  size: 22
 mouse:
   hide_when_typing: true
 env:

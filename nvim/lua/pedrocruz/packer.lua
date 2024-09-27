@@ -17,6 +17,8 @@ return require("packer").startup(function(use)
 
   use("mbbill/undotree")
 
+  use('neovim/nvim-lspconfig')
+
   use({
     "blazkowolf/gruber-darker.nvim",
     config = function()
@@ -33,6 +35,7 @@ return require("packer").startup(function(use)
   })
 
   use("nvim-tree/nvim-web-devicons")
+  use("romgrk/barbar.nvim")
   use("lewis6991/gitsigns.nvim")
   use("numToStr/Comment.nvim")
 
@@ -40,5 +43,6 @@ return require("packer").startup(function(use)
     "akinsho/toggleterm.nvim",
     tag = '*',
   })
+
 
 end)

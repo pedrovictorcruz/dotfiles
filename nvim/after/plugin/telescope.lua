@@ -1,4 +1,5 @@
 local file_ignore_patterns = {
+  ".cache",
   "yarn%.lock",
   "node_modules/",
   "raycast/",
