@@ -5,7 +5,7 @@ window:
 font:
   normal:
     family: "Iosevka nerd font"
-  size: 40
+  size: 28
 mouse:
   hide_when_typing: true
 env:

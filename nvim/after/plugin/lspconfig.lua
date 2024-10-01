@@ -11,6 +11,26 @@ vim.diagnostic.config({
   underline = false,    -- Sublinha a parte do código com erro
 })
 
+-- Configurar nvim-cmp para funcionar apenas com LSP
+local cmp = require'cmp'
+
+cmp.setup({
+  mapping = {
+    ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+    ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+    ['<C-y>'] = cmp.config.disable, -- Remova o atalho padrão
+    ['<C-e>'] = cmp.mapping({
+      i = cmp.mapping.abort(),
+      c = cmp.mapping.close(),
+    }),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Seleciona o primeiro item de sugestão com Enter
+  },
+  sources = {
+    { name = 'nvim_lsp' }, -- Apenas LSP source
+  }
+})
+
 vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, { noremap = true, silent = true })
 -- Mapeamento para mostrar assinatura de função com 'K'
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, { noremap = true, silent = true })
