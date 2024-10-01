@@ -37,7 +37,16 @@ vim.opt.ttimeoutlen = 50
 vim.env.TERM = "screen-256color"
 vim.env.COLORTERM = "truecolor"
 
-vim.keymap.set('n', '<C-f>', ':e ', { noremap = true })
-
 vim.opt.formatoptions = cro
+
+-- Definir o tom de cinza que você deseja usar
+local gray_color = "#5C6370" -- Defina a cor que você prefere
+
+-- Ajustar as cores dos diagnósticos LSP para cinza
+vim.cmd(string.format([[
+  highlight DiagnosticError guifg=%s
+  highlight DiagnosticWarn guifg=%s
+  highlight DiagnosticInfo guifg=%s
+  highlight DiagnosticHint guifg=%s
+]], gray_color, gray_color, gray_color, gray_color))
 

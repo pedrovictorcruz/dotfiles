@@ -12,8 +12,6 @@ return require("packer").startup(function(use)
 
   use("mbbill/undotree")
 
-  use('neovim/nvim-lspconfig')
-
   use({
     "blazkowolf/gruber-darker.nvim",
     config = function()
@@ -40,6 +38,17 @@ return require("packer").startup(function(use)
   })
 
   use("tpope/vim-fugitive")
+
+  use("nvim-lua/plenary.nvim")
+  use({
+    "ej-shafran/compile-mode.nvim",
+    config = function()
+      ---@type CompileModeOpts
+      vim.g.compile_mode = {
+        focus = true,
+      }
+    end
+  })
 
 
 end)

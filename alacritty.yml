@@ -1,7 +1,7 @@
 live_config_reload: true
 window:
   dynamic_title: true
-  startup_mode: Fullscreen
+  startup_mode: Windowed
 font:
   normal:
     family: "Iosevka nerd font"

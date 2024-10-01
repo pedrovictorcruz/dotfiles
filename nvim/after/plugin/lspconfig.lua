@@ -6,7 +6,7 @@ require'lspconfig'.ts_ls.setup{}
 
 -- Exibir mensagens de erro na linha
 vim.diagnostic.config({
-  virtual_text = false, -- Mostrar o erro diretamente no código
+  virtual_text = true, -- Mostrar o erro diretamente no código
   signs = true,        -- Mostrar sinais na lateral da linha (como "X")
   underline = false,    -- Sublinha a parte do código com erro
 })
@@ -16,18 +16,25 @@ local cmp = require'cmp'
 
 cmp.setup({
   mapping = {
-    ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
-    ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-    ['<C-y>'] = cmp.config.disable, -- Remova o atalho padrão
+    -- Mapeamento para mover para cima com Ctrl+P
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+    -- Mapeamento para mover para baixo com Ctrl+N
+    ['<C-n>'] = cmp.mapping.select_next_item(),
+    -- Mapeamento para aceitar a sugestão com Ctrl+Y
+    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    -- Mapeamento para ativar o autocompletar manualmente com Ctrl+Space
+    ['<C-Space>'] = cmp.mapping.complete(),
+    -- Fechar o menu com Ctrl+E
     ['<C-e>'] = cmp.mapping({
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     }),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Seleciona o primeiro item de sugestão com Enter
   },
   sources = {
     { name = 'nvim_lsp' }, -- Apenas LSP source
+  },
+  completion = {
+    autocomplete = false,
   }
 })
 
