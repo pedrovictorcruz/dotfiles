@@ -39,7 +39,5 @@ vim.env.COLORTERM = "truecolor"
 
 vim.keymap.set('n', '<C-f>', ':e ', { noremap = true })
 
-
-
-
+vim.opt.formatoptions = cro
 
