@@ -28,7 +28,6 @@ return require("packer").startup(function(use)
   })
 
   use("nvim-tree/nvim-web-devicons")
-  use("romgrk/barbar.nvim")
   use("lewis6991/gitsigns.nvim")
   use("numToStr/Comment.nvim")
 

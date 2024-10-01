@@ -39,4 +39,5 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set('n', '<C-f>', ':e ', { noremap = true })
+vim.keymap.set('n', '<C-b>', ':b ', { noremap = true })
 vim.keymap.set('n', '<M-x>', ':below Compile ', { noremap = true })
