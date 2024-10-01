@@ -34,6 +34,12 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.ttimeoutlen = 50
 
-vim.env.TERM = "xterm-256color"
+vim.env.TERM = "screen-256color"
 vim.env.COLORTERM = "truecolor"
+
+vim.keymap.set('n', '<C-f>', ':e ', { noremap = true })
+
+
+
+
 

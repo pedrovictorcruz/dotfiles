@@ -4,14 +4,9 @@ return require("packer").startup(function(use)
   -- Packer can manage itself
   use("wbthomason/packer.nvim")
 
-  use({
-    "nvim-telescope/telescope.nvim",
-    tag = "0.1.6",
-    -- or                            , branch = '0.1.x',
-    requires = { { "nvim-lua/plenary.nvim" } },
-  })
-
-  use("nvim-telescope/telescope-file-browser.nvim")
+  use 'hrsh7th/nvim-cmp'         -- Completion plugin
+  use 'hrsh7th/cmp-nvim-lsp'     -- LSP source for nvim-cmp
+  use 'neovim/nvim-lspconfig'    -- LSP configurations
 
   use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
@@ -43,6 +38,8 @@ return require("packer").startup(function(use)
     "akinsho/toggleterm.nvim",
     tag = '*',
   })
+
+  use("tpope/vim-fugitive")
 
 
 end)
