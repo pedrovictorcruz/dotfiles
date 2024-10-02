@@ -1,4 +1,6 @@
 live_config_reload: true
+shell:
+  program: tmux
 window:
   dynamic_title: true
   startup_mode: Windowed

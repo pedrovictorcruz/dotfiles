@@ -38,6 +38,37 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
-vim.keymap.set('n', '<C-f>', ':e ', { noremap = true })
-vim.keymap.set('n', '<C-b>', ':b ', { noremap = true })
+--vim.keymap.set('n', '<C-f>', ':e ', { noremap = true })
+vim.api.nvim_create_user_command('FindFile', function()
+    vim.opt.path:append('**/*/**')
+    vim.opt.wildignore:append('*/node_modules/*,*/vendor/*')
+    local filename = vim.fn.input('Find file: ')
+    vim.cmd('find ' .. filename)
+end, {})
+
+vim.api.nvim_create_user_command('FindFile', function()
+    vim.opt.path:append('**/*/**')
+    vim.opt.wildignore:append('*/node_modules/*,*/build/*')
+    local filename = vim.fn.input('Find file: ')
+    vim.cmd('find ' .. filename)
+end, {})
+
+vim.api.nvim_set_keymap('n', '<C-f>', ':FindFile<CR>', { noremap = true, silent = true })
+
+
+vim.api.nvim_create_user_command('FindBuffer', function()
+    local buffername = vim.fn.input('Find buffer: ')
+    local buffers = vim.api.nvim_list_bufs()
+    for _, bufnr in ipairs(buffers) do
+        local bufname = vim.api.nvim_buf_get_name(bufnr)
+        if bufname:match(buffername) then
+            vim.api.nvim_buf_set_option(bufnr, 'buflisted', true)
+            vim.api.nvim_command('buffer ' .. bufnr)
+            return
+        end
+    end
+    print('No buffer found')
+end, {})
+
+vim.api.nvim_set_keymap('n', '<C-e>', ':FindBuffer<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<M-x>', ':below Compile ', { noremap = true })

@@ -49,5 +49,8 @@ return require("packer").startup(function(use)
     end
   })
 
+  use('junegunn/fzf')
+  use('junegunn/fzf.vim')
+
 
 end)
