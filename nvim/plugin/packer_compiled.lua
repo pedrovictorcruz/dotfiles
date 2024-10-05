@@ -90,26 +90,21 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/compile-mode.nvim",
     url = "https://github.com/ej-shafran/compile-mode.nvim"
   },
-  fzf = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/fzf",
-    url = "https://github.com/junegunn/fzf"
-  },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/fzf.vim",
-    url = "https://github.com/junegunn/fzf.vim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruber-darker.nvim"] = {
-    config = { "\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\fstrings\1\rcomments\2\14operators\1\nfolds\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0" },
+    config = { "\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\14operators\1\nfolds\2\fstrings\1\rcomments\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0" },
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/gruber-darker.nvim",
     url = "https://github.com/blazkowolf/gruber-darker.nvim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -165,7 +160,7 @@ try_loadstring("\27LJ\2\n8\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\
 time([[Config for compile-mode.nvim]], false)
 -- Config for: gruber-darker.nvim
 time([[Config for gruber-darker.nvim]], true)
-try_loadstring("\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\fstrings\1\rcomments\2\14operators\1\nfolds\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0", "config", "gruber-darker.nvim")
+try_loadstring("\27LJ\2\n‡\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vitalic\1\0\4\14operators\1\nfolds\2\fstrings\1\rcomments\2\1\0\2\vitalic\0\tbold\2\nsetup\18gruber-darker\frequire\0", "config", "gruber-darker.nvim")
 time([[Config for gruber-darker.nvim]], false)
 
 _G._packer.inside_compile = false

@@ -48,9 +48,5 @@ return require("packer").startup(function(use)
       }
     end
   })
-
-  use('junegunn/fzf')
-  use('junegunn/fzf.vim')
-
-
+  use('ThePrimeagen/harpoon')
 end)

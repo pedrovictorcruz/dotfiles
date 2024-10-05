@@ -50,3 +50,5 @@ vim.cmd(string.format([[
   highlight DiagnosticHint guifg=%s
 ]], gray_color, gray_color, gray_color, gray_color))
 
+vim.opt.path:append("**")
+vim.opt.wildignore:append("*/node_modules/*,*/build/*,*/dist/*")

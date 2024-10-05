@@ -4,12 +4,23 @@ require'lspconfig'.clangd.setup{}
 -- Configurar ts_ls (TS)
 require'lspconfig'.ts_ls.setup{}
 
+-- Setup pyright (python)
+require'lspconfig'.pyright.setup{}
+
 -- Exibir mensagens de erro na linha
 vim.diagnostic.config({
   virtual_text = true, -- Mostrar o erro diretamente no código
   signs = true,        -- Mostrar sinais na lateral da linha (como "X")
   underline = false,    -- Sublinha a parte do código com erro
 })
+
+-- Customize diagnostic colors
+vim.cmd [[
+    highlight DiagnosticError guifg=gray ctermfg=gray
+    highlight DiagnosticWarn guifg=gray ctermfg=gray
+    highlight DiagnosticInfo guifg=gray ctermfg=gray
+    highlight DiagnosticHint guifg=gray ctermfg=gray
+]]
 
 -- Configurar nvim-cmp para funcionar apenas com LSP
 local cmp = require'cmp'
@@ -45,7 +56,7 @@ vim.keymap.set('n', 'K', vim.lsp.buf.hover, { noremap = true, silent = true })
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 
 -- Mapeamento para formatar o código com '<leader>f'
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { noremap = true, silent = true })
+--vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { noremap = true, silent = true })
 
 -- Mapeamento para mostrar os erros da linha com 'vd'
 vim.keymap.set('n', 'vd', vim.diagnostic.open_float, { noremap = true, silent = true })
