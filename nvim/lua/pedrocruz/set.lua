@@ -54,7 +54,7 @@ vim.opt.path:append("**")
 vim.opt.wildignore:append("*/node_modules/*,*/build/*,*/dist/*")
 
 vim.o.wildmenu = true
-vim.o.wildmode = "full"
+vim.o.wildmode = "longest,full"
 vim.o.wildoptions = ""
 vim.o.pumblend = 0
 vim.o.completeopt = "menu,menuone,noselect"
