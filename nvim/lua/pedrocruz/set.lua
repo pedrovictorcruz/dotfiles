@@ -21,8 +21,8 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
-
 vim.opt.background = "dark"
+vim.cmd("highlight Normal guibg='#181818'")
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
@@ -49,6 +49,15 @@ vim.cmd(string.format([[
   highlight DiagnosticInfo guifg=%s
   highlight DiagnosticHint guifg=%s
 ]], gray_color, gray_color, gray_color, gray_color))
+
+vim.cmd(string.format([[
+  highlight CmpItemAbbr guibg=NONE guifg=#A0A0A0
+  highlight CmpItemAbbrMatch guibg=NONE guifg=#FFCC00
+  highlight CmpItemAbbrMatchFuzzy guibg=NONE guifg=#FFCC00
+  highlight CmpItemKind guibg=NONE guifg=#A0A0A0
+  highlight CmpItemMenu guibg=NONE guifg=#A0A0A0
+  highlight CmpItemSelected guibg=#3d3d3d guifg=#FFFFFF
+]]))
 
 vim.opt.path:append("**")
 vim.opt.wildignore:append("*/node_modules/*,*/build/*,*/dist/*")

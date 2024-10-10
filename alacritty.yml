@@ -7,7 +7,7 @@ window:
   startup_mode: Windowed
 font:
   normal:
-    family: "Iosevka nerd font"
+    family: "JetBrainsMono Nerd Font"
   size: 22
 mouse:
   hide_when_typing: true
