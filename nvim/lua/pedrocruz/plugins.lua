@@ -1,4 +1,11 @@
 return {
+    { 'nvim-telescope/telescope.nvim',
+        tag = '0.1.8',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+    {
+        "nvim-telescope/telescope-file-browser.nvim"
+    },
     { "hrsh7th/nvim-cmp" },
     { "hrsh7th/cmp-nvim-lsp" },
     { "neovim/nvim-lspconfig" },
@@ -7,21 +14,6 @@ return {
         build = ":TSUpdate",
     },
     { "mbbill/undotree" },
-    { "drsooch/gruber-darker-vim" },
-    {
-        "blazkowolf/gruber-darker.nvim",
-        config = function()
-            require("gruber-darker").setup({
-                bold = true,
-                italic = {
-                    strings = false,
-                    comments = true,
-                    operators = false,
-                    folds = true,
-                },
-            })
-        end,
-    },
     { "nvim-tree/nvim-web-devicons" },
     { "lewis6991/gitsigns.nvim" },
     { "numToStr/Comment.nvim" },
@@ -35,16 +27,6 @@ return {
                 focus = true,
             }
         end,
-    },
-    { "ThePrimeagen/harpoon" },
-    {
-        'stevearc/oil.nvim',
-        ---@module 'oil'
-        ---@type oil.SetupOpts
-        opts = {},
-        -- Optional dependencies
-        dependencies = { { "echasnovski/mini.icons", opts = {} } },
-        -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
     },
     {
         "hrsh7th/nvim-cmp",
@@ -71,5 +53,11 @@ return {
     },
     { 'onsails/lspkind-nvim' },
     { "rose-pine/neovim", name = "rose-pine" },
+    { 'romgrk/barbar.nvim' },
+    {
+        "zbirenbaum/copilot.lua",
+        cmd = "Copilot",
+        build = ":Copilot auth",
+    }
 }
 

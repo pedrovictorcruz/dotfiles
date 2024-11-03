@@ -37,6 +37,8 @@ vim.opt.ttimeoutlen = 50
 vim.env.TERM = "screen-256color"
 vim.env.COLORTERM = "truecolor"
 
+vim.opt.guicursor = "n-c-v:block"
+
 vim.opt.formatoptions = cro
 
 -- Definir o tom de cinza que você deseja usar
@@ -66,4 +68,8 @@ vim.o.wildmenu = true
 vim.o.wildmode = "longest,full"
 vim.o.wildoptions = ""
 vim.o.pumblend = 0
-vim.o.completeopt = "menu,menuone,noselect"
+vim.o.completeopt = "menuone,noselect"
+
+vim.g.netrw_banner = 0					-- gets rid of the annoying banner for netrw
+
+
