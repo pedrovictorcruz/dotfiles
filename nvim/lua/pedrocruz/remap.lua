@@ -38,6 +38,6 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
-vim.keymap.set('n', '<C-f>', ':find ', { noremap = true })
+vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set('n', '<M-x>', ':tabnew Compile ', { noremap = true })
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)

@@ -9,6 +9,7 @@ local file_ignore_patterns = {
     "build/",
     "target/",
     "package%-lock%.json",
+    "vendor/",
 }
 
 local builtin = require('telescope.builtin')
@@ -19,11 +20,17 @@ vim.keymap.set('n', '<C-p>', function()
     builtin.find_files({
         file_ignore_patterns = file_ignore_patterns,
         previewer = false,
+        hidden = true,                               -- Mostrar arquivos ocultos
+        respect_gitignore = false,                    -- Respeitar .gitignore
+        file_ignore_patterns = file_ignore_patterns, -- Usar os padrões de arquivos ignorados
     })
 end, {})
 vim.keymap.set('n', '<leader>ps', function()
     builtin.live_grep({
         file_ignore_patterns = file_ignore_patterns,
+        previewer = false,
+        hidden = true,                               -- Mostrar arquivos ocultos
+        respect_gitignore = false,                    -- Respeitar .gitignore
     })
 end, {})
 vim.keymap.set('n', ';e', function()
@@ -36,7 +43,6 @@ vim.keymap.set('n', '<leader>pv', function()
         path = "%:p:h",                              -- Abre o file browser no diretório atual
         hidden = true,                               -- Mostrar arquivos ocultos
         respect_gitignore = false,                    -- Respeitar .gitignore
-        file_ignore_patterns = file_ignore_patterns, -- Usar os padrões de arquivos ignorados
         previewer = false,
     })
 end, {})

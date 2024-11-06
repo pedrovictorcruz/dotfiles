@@ -58,6 +58,20 @@ return {
         "zbirenbaum/copilot.lua",
         cmd = "Copilot",
         build = ":Copilot auth",
-    }
+    },
+    {
+        "blazkowolf/gruber-darker.nvim",
+        config = function()
+            require("gruber-darker").setup({
+                bold = true,
+                italic = {
+                    strings = false,
+                    comments = true,
+                    operators = false,
+                    folds = true,
+                },
+            })
+        end,
+    },
 }
 

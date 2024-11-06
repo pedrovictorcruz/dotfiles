@@ -1,0 +1,16 @@
+live_config_reload: true
+shell:
+  program: tmux
+window:
+  dynamic_title: true
+  startup_mode: Fullscreen
+font:
+  normal:
+    family: "Iosevka Nerd Font"
+  size: 28
+mouse:
+  hide_when_typing: true
+env:
+  TERM: screen-256color
+include:
+  - "~/.config/alacritty/themes/themes/rose_pine.toml"
