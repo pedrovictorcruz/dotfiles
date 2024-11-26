@@ -1,6 +1,38 @@
 local cmp = require("cmp")
 local lspkind = require('lspkind')
 
+lspkind.init({
+  -- Personalizar os ícones
+  symbol_map = {
+    Text = "󰉿",
+    Method = "󰆧",
+    Function = "󰆧",
+    Constructor = "",
+    Field = "󰜢",
+    Variable = "󰀫",
+    Class = "󰠱",
+    Interface = "",
+    Module = "",
+    Property = "󰜢",
+    Unit = "󰑭",
+    Value = "󰎠",
+    Enum = "",
+    Keyword = "󰌋",
+    Snippet = "",
+    Color = "󰏘",
+    File = "󰈙",
+    Reference = "󰈇",
+    Folder = "󰉋",
+    EnumMember = "",
+    Constant = "󰏿",
+    Struct = "󰙅",
+    Event = "",
+    Operator = "󰆕",
+    TypeParameter = "",
+  },
+})
+
+
 local options = {
   completion = { completeopt = "menu,menuone,noinsert" },
   snippet = {
@@ -44,9 +76,15 @@ local options = {
   },
   formatting = {
     format = function(entry, vim_item)
-      -- Personalize a aparência do item de conclusão
-      vim_item.kind = string.format("%s %s", require("lspkind").presets.default[vim_item.kind], vim_item.kind)
-      return vim_item
+        vim_item.kind = string.format("%s %s", require("lspkind").symbol_map[vim_item.kind] or "", vim_item.kind)
+        vim_item.menu = ({
+            buffer = "[Buffer]",
+            nvim_lsp = "[LSP]",
+            nvim_lua = "[Lua]",
+            luasnip = "[Snippet]",
+            path = "[Path]",
+        })[entry.source.name]
+        return vim_item
     end,
   },
 }

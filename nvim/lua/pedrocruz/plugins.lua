@@ -15,16 +15,38 @@ return {
     },
     { "mbbill/undotree" },
     { "nvim-tree/nvim-web-devicons" },
-    { "lewis6991/gitsigns.nvim" },
+    {
+		-- Adds git related signs to the gutter, as well as utilities for managing changes
+		'lewis6991/gitsigns.nvim',
+		opts = {
+			-- See `:help gitsigns.txt`
+			signs = {
+				add = { text = '+' },
+				change = { text = '~' },
+				delete = { text = '_' },
+				topdelete = { text = '‾' },
+				changedelete = { text = '~' }
+			},
+			on_attach = function(bufnr)
+				vim.keymap.set('n', '<leader>hp',
+					require('gitsigns').preview_hunk,
+					{ buffer = bufnr, desc = 'Preview git hunk' })
+			end
+		},
+	},
     { "numToStr/Comment.nvim" },
     { "akinsho/toggleterm.nvim", version = "*" },
     { "tpope/vim-fugitive" },
     { "nvim-lua/plenary.nvim" },
     {
         "ej-shafran/compile-mode.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            { "m00qek/baleia.nvim", tag = "v1.3.0" },
+        },
         config = function()
             vim.g.compile_mode = {
-                focus = true,
+                baleia_setup = true,
             }
         end,
     },
@@ -54,24 +76,37 @@ return {
     { 'onsails/lspkind-nvim' },
     { "rose-pine/neovim", name = "rose-pine" },
     { 'romgrk/barbar.nvim' },
+    --{
+    --    'akinsho/bufferline.nvim',
+    --    version = "*", 
+    --    dependencies = 'nvim-tree/nvim-web-devicons'
+    --},
+    { 'sainnhe/gruvbox-material' },
+    { "Yazeed1s/oh-lucy.nvim", },
     {
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        build = ":Copilot auth",
+        'folke/trouble.nvim',
+        requires = "kyazdani42/nvim-web-devicons",
+        opts = {}, -- for default options, refer to the configuration section for custom setup.
+        cmd = 'Trouble',
+        keys = {
+            {
+                '<leader>q',
+                '<cmd>Trouble diagnostics toggle focus=true filter.buf=0<cr>',
+                desc = 'Buffer Diagnostics (Trouble)',
+            },
+        },
     },
     {
-        "blazkowolf/gruber-darker.nvim",
-        config = function()
-            require("gruber-darker").setup({
-                bold = true,
-                italic = {
-                    strings = false,
-                    comments = true,
-                    operators = false,
-                    folds = true,
-                },
-            })
-        end,
+        'stevearc/oil.nvim',
+        opts = {
+            view_options = {
+                show_hidden = true,
+            },
+        },
+        dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
     },
+    {
+        'williamboman/mason.nvim'
+    }
 }
 

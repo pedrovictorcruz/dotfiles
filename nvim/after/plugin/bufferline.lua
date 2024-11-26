@@ -1,0 +1,26 @@
+--require("bufferline").setup {
+--    options = {
+--        -- Configuração de ícones para GitSigns (simulando o comportamento do barbar)
+--        diagnostics = false, -- | "nvim_lsp" | "coc",
+--		diagnostics_update_in_insert = false,
+--
+--        -- Estilo de separadores entre os buffers
+--        separator_style = {"", ""}, -- Pode ser "slant", "thick", "thin", ou personalizado
+--
+--        -- Ativa os ícones de buffer
+--        show_buffer_icons = false,
+--
+--        -- Ícones de fechamento de buffers
+--        show_close_icon = false,
+--        show_buffer_close_icons = false,
+--
+--        -- Garante que o buffer atual seja destacado
+--        always_show_bufferline = true,
+--    },
+--}
+--
+---- Mapeamentos semelhantes aos utilizados com o Barbar
+--vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
+--vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
+--vim.keymap.set('n', '<A-c>', '<Cmd>bd!<CR>', {})
+--
