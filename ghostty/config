@@ -1,0 +1,16 @@
+command = tmux
+
+# window
+fullscreen = false
+window-height=510
+window-width=1640
+window-decoration = false
+window-save-state = always
+
+# font
+font-size = 24
+font-family = FiraCode Nerd Font
+
+# ui
+theme = Apple System Colors
+mouse-hide-while-typing = true
