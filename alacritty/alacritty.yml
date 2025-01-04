@@ -20,7 +20,7 @@ scrolling:
 
 font:
   normal:
-    family: "JetbrainsMono NF"
+    family: "Firacode Nerd Font"
     style: "Regular"
   size: 25
   offset:
@@ -58,11 +58,8 @@ colors:
 
 cursor:
   style:
-    shape: "Underline"
+    shape: "Block"
     blinking: "Never"
-
-terminal:
-  osc52: "CopyPaste"
 
 mouse:
   hide_when_typing: true

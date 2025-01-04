@@ -1,11 +1,11 @@
 --vim.cmd([[colorscheme oh-lucy-evening]])
---vim.cmd([[
---" Available values: 'hard', 'medium'(default), 'soft'
---let g:gruvbox_material_background = 'hard'
---colorscheme gruvbox-material
---]])
+vim.cmd([[
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'hard'
+colorscheme gruvbox-material
+]])
 
-vim.cmd([[colorscheme rose-pine]])
+--vim.cmd([[colorscheme rose-pine]])
 
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 --vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
