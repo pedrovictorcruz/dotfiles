@@ -32,4 +32,6 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.shortmess:append "I"
+
 --vim.opt.colorcolumn = "80"

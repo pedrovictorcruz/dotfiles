@@ -19,6 +19,15 @@ require'lspconfig'.zls.setup{
     cmd = { '/usr/local/bin/zls' }
 }
 
+-- Setup gopls (go)
+require'lspconfig'.gopls.setup{
+    settings = {
+        gopls = {
+            gofumpt = true
+        }
+    }
+}
+
 -- Exibir mensagens de erro na linha
 vim.diagnostic.config({
   virtual_text = true, -- Mostrar o erro diretamente no código

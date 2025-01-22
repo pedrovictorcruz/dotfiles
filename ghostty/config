@@ -8,9 +8,10 @@ window-decoration = false
 window-save-state = always
 
 # font
-font-size = 24
+font-size = 28
 font-family = FiraCode Nerd Font
 
 # ui
-theme = Apple System Colors
+theme = rose-pine
 mouse-hide-while-typing = true
+term = screen-256color
