@@ -31,4 +31,5 @@ return {
 		cmd = "Copilot",
 		build = ":Copilot auth",
 	},
+	{ "tpope/vim-fugitive" },
 }
