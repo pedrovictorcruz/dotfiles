@@ -1,0 +1,44 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "#161616"
+foreground = "#dac7a6"
+
+[cursor.style]
+blinking = "Never"
+shape = "Block"
+
+[font]
+builtin_box_drawing = true
+size = 20
+
+[font.glyph_offset]
+x = 1
+y = 1
+
+[font.normal]
+family = "Firacode Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 6
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 4
+
+[window]
+decorations = "Full"
+opacity = 1
+resize_increments = false
+startup_mode = "Windowed"
+title = "Alacritty"
+
+[window.dimensions]
+columns = 120
+lines = 45
