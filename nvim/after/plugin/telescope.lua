@@ -1,41 +1,59 @@
 local file_ignore_patterns = {
-    "yarn%.lock",
-    "node_modules/",
-    "raycast/",
-    "dist/",
-    "%.next",
-    "%.git/",
-    "%.gitlab/",
-    "build/",
-    "target/",
-    "package%-lock%.json",
-    "vendor/",
-    "%.zig-cache/",
+    ".gradle/",
+	"yarn%.lock",
+	"node_modules/",
+	"raycast/",
+	"dist/",
+	"%.next",
+	"%.git/",
+	"%.gitlab/",
+	"build/",
+	"target/",
+	"package%-lock%.json",
+	"vendor/",
+	"%.zig-cache/",
 }
 
-local builtin = require('telescope.builtin')
+require("telescope").setup({
+	pickers = {
+		find_files = {
+			theme = "ivy",
+		},
+		live_grep = {
+			theme = "ivy",
+		},
+		diagnostics = {
+			theme = "ivy",
+		},
+	},
+	defaults = {
+		mappings = {
+			i = {
+				["<C-j>"] = "move_selection_next",
+				["<C-k>"] = "move_selection_previous",
+			},
+		},
+	},
+})
 
-require('telescope').load_extension('file_browser')
+local builtin = require("telescope.builtin")
 
-vim.keymap.set('n', '<C-p>', function()
-    builtin.find_files({
-        file_ignore_patterns = file_ignore_patterns,
-        previewer = false,
-        hidden = true,                               -- Mostrar arquivos ocultos
-        respect_gitignore = false,                    -- Respeitar .gitignore
-    })
+vim.keymap.set("n", "<space>fd", function()
+	builtin.find_files({
+		file_ignore_patterns = file_ignore_patterns,
+		previewer = false,
+		hidden = true,
+		respect_gitignore = true,
+	})
 end, {})
-vim.keymap.set('n', '<leader>ps', function()
-    builtin.live_grep({
-        file_ignore_patterns = file_ignore_patterns,
-        previewer = false,
-        hidden = true,                               -- Mostrar arquivos ocultos
-        respect_gitignore = false,                    -- Respeitar .gitignore
-    })
-end, {})
-vim.keymap.set('n', ';e', function()
-    builtin.diagnostics()
+vim.keymap.set("n", "<space>fe", function()
+	builtin.diagnostics()
 end)
-vim.keymap.set("n", "<leader>ls", function()
-  builtin.lsp_document_symbols()
-end, { })
+vim.keymap.set("n", "<space>fs", function()
+	builtin.live_grep({
+		file_ignore_patterns = file_ignore_patterns,
+		previewer = true,
+		hidden = true,
+		respect_gitignore = true,
+	})
+end, {})
