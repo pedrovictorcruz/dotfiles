@@ -26,10 +26,17 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	{ "mbbill/undotree" },
-	{
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		build = ":Copilot auth",
-	},
 	{ "tpope/vim-fugitive" },
+	{ "alljokecake/naysayer-theme.nvim", name = "naysayer" },
+	{
+		"hrsh7th/nvim-cmp",
+		dependencies = {
+			{
+				"hrsh7th/cmp-nvim-lua",
+				"hrsh7th/cmp-nvim-lsp",
+				"hrsh7th/cmp-buffer",
+				"hrsh7th/cmp-path",
+			},
+		},
+	},
 }

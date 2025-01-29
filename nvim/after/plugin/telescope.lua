@@ -46,9 +46,6 @@ vim.keymap.set("n", "<space>fd", function()
 		respect_gitignore = true,
 	})
 end, {})
-vim.keymap.set("n", "<space>fe", function()
-	builtin.diagnostics()
-end)
 vim.keymap.set("n", "<space>fs", function()
 	builtin.live_grep({
 		file_ignore_patterns = file_ignore_patterns,
@@ -57,3 +54,7 @@ vim.keymap.set("n", "<space>fs", function()
 		respect_gitignore = true,
 	})
 end, {})
+vim.keymap.set("n", "<leader>ls", function()
+  builtin.lsp_document_symbols()
+end, { })
+
