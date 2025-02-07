@@ -1,32 +1,33 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/marine_dark.toml"
+]
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
-[colors.primary]
-background = "#161616"
-foreground = "#dac7a6"
-
 [cursor.style]
-blinking = "Never"
+blinking = "Always"
 shape = "Block"
 
 [font]
 builtin_box_drawing = true
-size = 20
+size = 18
 
 [font.glyph_offset]
 x = 1
 y = 1
 
 [font.normal]
-family = "Firacode Nerd Font"
-style = "Regular"
+family = "MesloLGL Nerd Font"
+style = "Bold"
 
 [font.offset]
 x = 1
 y = 6
 
 [mouse]
-hide_when_typing = true
+hide_when_typing = false
 
 [scrolling]
 history = 10000
@@ -38,7 +39,3 @@ opacity = 1
 resize_increments = false
 startup_mode = "Windowed"
 title = "Alacritty"
-
-[window.dimensions]
-columns = 120
-lines = 45
