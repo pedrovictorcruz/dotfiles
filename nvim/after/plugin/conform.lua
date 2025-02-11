@@ -8,6 +8,7 @@ require("conform").setup({
 		typescriptreact = { "biome" },
 		go = { "gofumpt" },
 		kotlin = { "ktfmt" },
+		cpp = { "clang-format" },
 	},
 })
 

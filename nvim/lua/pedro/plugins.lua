@@ -28,6 +28,7 @@ return {
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
 	{ "alljokecake/naysayer-theme.nvim", name = "naysayer" },
+	{ "nickkadutskyi/jb.nvim", name = "jb" },
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {

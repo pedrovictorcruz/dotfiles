@@ -1,6 +1,12 @@
+[env]
+term="xterm-256color"
+
+[terminal.shell]
+program = "tmux"
+
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/marine_dark.toml"
+    "~/.config/alacritty/themes/themes/dracula_plus.toml"
 ]
 
 [colors]
@@ -10,17 +16,16 @@ draw_bold_text_with_bright_colors = true
 blinking = "Always"
 shape = "Block"
 
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
 [font]
 builtin_box_drawing = true
-size = 18
+size = 16
 
 [font.glyph_offset]
 x = 1
 y = 1
-
-[font.normal]
-family = "MesloLGL Nerd Font"
-style = "Bold"
 
 [font.offset]
 x = 1
@@ -30,12 +35,14 @@ y = 6
 hide_when_typing = false
 
 [scrolling]
-history = 10000
+history = 100000
 multiplier = 4
 
 [window]
+dimensions = { columns = 150, lines = 50 }
 decorations = "Full"
+dynamic_title = true
+decorations_theme_variant = "Dark"
 opacity = 1
 resize_increments = false
 startup_mode = "Windowed"
-title = "Alacritty"
