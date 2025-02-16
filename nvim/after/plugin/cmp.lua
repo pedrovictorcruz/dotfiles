@@ -1,8 +1,30 @@
 local cmp = require("cmp")
+local lspkind = require("lspkind")
+
 local options = {
 	completion = {
 		completeopt = "menu,menuone,noinsert",
-		autocomplete = false,
+		autocomplete = { cmp.TriggerEvent.TextChanged },
+	},
+	snippet = {
+		expand = function(args)
+			require("luasnip").lsp_expand(args.body)
+		end,
+	},
+	window = {
+		completion = {
+			border = "single",
+		},
+		documentation = {
+			border = "single",
+		},
+	},
+	formatting = {
+		format = lspkind.cmp_format({
+			mode = "symbol_text",
+			maxwidth = 50,
+			ellipsis_char = "...",
+		}),
 	},
 	mapping = {
 		["<C-Space>"] = cmp.mapping.complete(),
@@ -13,9 +35,24 @@ local options = {
 	},
 	sources = {
 		{ name = "nvim_lsp" },
-		{ name = "buffer" },
+		{ name = "luasnip" },
 		{ name = "nvim_lua" },
 		{ name = "path" },
 	},
 }
 cmp.setup(options)
+
+cmp.setup.cmdline("/", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = "buffer" },
+	},
+})
+
+cmp.setup.cmdline(":", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = "path" },
+		{ name = "cmdline" },
+	}),
+})

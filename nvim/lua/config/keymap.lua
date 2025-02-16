@@ -1,5 +1,3 @@
-vim.keymap.set("n", "<leader>pv", "<CMD>Oil<CR>")
-
 vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "Q", "<nop>")
 
@@ -13,3 +11,11 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "fugitive://*",
+  callback = function()
+    vim.cmd("only") 
+  end,
+})
+

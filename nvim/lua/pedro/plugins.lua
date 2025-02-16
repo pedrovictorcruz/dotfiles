@@ -28,7 +28,24 @@ return {
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
 	{ "alljokecake/naysayer-theme.nvim", name = "naysayer" },
-	{ "nickkadutskyi/jb.nvim", name = "jb" },
+	{
+		"vague2k/vague.nvim",
+		priority = 1000,
+	},
+	{
+		"olimorris/onedarkpro.nvim",
+		priority = 1000,
+	},
+	{
+		"Mofiqul/adwaita.nvim",
+		lazy = false,
+		priority = 1000,
+	},
+	{
+		"datsfilipe/vesper.nvim",
+		lazy = false,
+		priority = 1000,
+	},
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
@@ -37,6 +54,18 @@ return {
 				"hrsh7th/cmp-nvim-lsp",
 				"hrsh7th/cmp-buffer",
 				"hrsh7th/cmp-path",
+				"hrsh7th/cmp-cmdline",
+				"L3MON4D3/LuaSnip",
+				"saadparwaiz1/cmp_luasnip",
+				"onsails/lspkind.nvim",
+			},
+		},
+	},
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = {
+			{
+				"nvim-tree/nvim-web-devicons",
 			},
 		},
 	},

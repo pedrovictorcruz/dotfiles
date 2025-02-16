@@ -1,5 +1,5 @@
 local file_ignore_patterns = {
-    ".gradle/",
+	".gradle/",
 	"yarn%.lock",
 	"node_modules/",
 	"raycast/",
@@ -16,21 +16,31 @@ local file_ignore_patterns = {
 
 require("telescope").setup({
 	pickers = {
-		find_files = {
-			theme = "ivy",
-		},
-		live_grep = {
-			theme = "ivy",
-		},
-		diagnostics = {
-			theme = "ivy",
-		},
+		-- find_files = {
+		-- 	theme = "ivy",
+		-- },
+		-- live_grep = {
+		-- 	theme = "ivy",
+		-- },
+		-- diagnostics = {
+		-- 	theme = "ivy",
+		-- },
 	},
 	defaults = {
+		layout_strategy = "bottom_pane", -- Define o layout para ficar na parte inferior
+		layout_config = {
+			height = 10, -- Define uma altura mínima (ajuste conforme necessário)
+			prompt_position = "top", -- Deixa o campo de busca no topo
+		},
+		sorting_strategy = "ascending", -- Mostra os itens de cima para baixo
+		border = false, -- Remove bordas para um visual mais clean
+		selection_caret = "❯ ", -- Ícone de seleção simples
 		mappings = {
 			i = {
 				["<C-j>"] = "move_selection_next",
 				["<C-k>"] = "move_selection_previous",
+				["<C-n>"] = "move_selection_next",
+				["<C-p>"] = "move_selection_previous",
 			},
 		},
 	},
@@ -55,6 +65,5 @@ vim.keymap.set("n", "<space>fs", function()
 	})
 end, {})
 vim.keymap.set("n", "<leader>ls", function()
-  builtin.lsp_document_symbols()
-end, { })
-
+	builtin.lsp_document_symbols()
+end, {})

@@ -34,3 +34,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.o.cmdheight = 0
+vim.o.laststatus = 3
