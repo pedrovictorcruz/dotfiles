@@ -6,7 +6,7 @@ program = "tmux"
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/vesper.toml"
+    "~/.config/alacritty/themes/themes/marine_dark.toml"
 ]
 
 [colors]
@@ -17,11 +17,11 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "IosevkaTerm Nerd Font"
 
 [font]
 builtin_box_drawing = true
-size = 18
+size = 26
 
 [font.glyph_offset]
 x = 1
