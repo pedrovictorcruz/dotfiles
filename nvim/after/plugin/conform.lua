@@ -9,6 +9,7 @@ require("conform").setup({
 		go = { "gofumpt" },
 		kotlin = { "ktfmt" },
 		cpp = { "clang-format" },
+		sql = { "sqlfmt" },
 	},
 })
 

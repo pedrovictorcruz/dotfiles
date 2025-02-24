@@ -22,11 +22,14 @@ require("vesper").setup({
 	},
 })
 
-vim.cmd("colorscheme naysayer")
+vim.g.tinted_colorspace = 256
+
+
+-- vim.cmd("colorscheme naysayer")
 -- vim.cmd("colorscheme vesper")
 -- vim.cmd("colorscheme vague")
 -- vim.cmd("colorscheme onedark_dark")
 -- vim.cmd("colorscheme adwaita")
+-- vim.cmd.colorscheme("gruvbox-material")
+vim.cmd.colorscheme('base16-horizon-dark')
 
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
