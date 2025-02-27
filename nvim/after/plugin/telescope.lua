@@ -27,14 +27,14 @@ require("telescope").setup({
 		-- },
 	},
 	defaults = {
-		layout_strategy = "bottom_pane", -- Define o layout para ficar na parte inferior
+		layout_strategy = "center", -- Define o layout para ficar na parte inferior
 		layout_config = {
-			height = 10, -- Define uma altura mínima (ajuste conforme necessário)
-			prompt_position = "top", -- Deixa o campo de busca no topo
+			height = 15, -- Define uma altura mínima (ajuste conforme necessário)
+			prompt_position = "bottom", -- Deixa o campo de busca no topo
 		},
-		sorting_strategy = "ascending", -- Mostra os itens de cima para baixo
-		border = false, -- Remove bordas para um visual mais clean
-		selection_caret = "❯ ", -- Ícone de seleção simples
+		sorting_strategy = "descending", -- Mostra os itens de cima para baixo
+		border = true, -- Remove bordas para um visual mais clean
+		selection_caret = "> ", -- Ícone de seleção simples
 		mappings = {
 			i = {
 				["<C-j>"] = "move_selection_next",

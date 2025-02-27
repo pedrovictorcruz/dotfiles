@@ -1,12 +1,9 @@
 [env]
 term="xterm-256color"
 
-[terminal.shell]
-program = "tmux"
-
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/gruvbox_material_hard.toml"
+    "~/.config/alacritty/themes/themes/marine_dark.toml"
 ]
 
 [colors]
@@ -17,11 +14,11 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "RobotoMono Nerd Font"
 
 [font]
 builtin_box_drawing = true
-size = 18
+size = 24
 
 [font.glyph_offset]
 x = 1
@@ -46,3 +43,10 @@ decorations_theme_variant = "Dark"
 opacity = 1
 resize_increments = false
 startup_mode = "Windowed"
+
+[keyboard]
+bindings = [
+{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+{ key = "L", mods = "Control|Shift", chars = "l" },
+]
+
