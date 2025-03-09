@@ -1,13 +1,18 @@
-local barbar = require("barbar")
-
-barbar.setup({
-	animation = false,
-	gitsigns = {
-		added = { enabled = true, icon = "+" },
-		changed = { enabled = true, icon = "~" },
-		deleted = { enabled = true, icon = "-" },
-	},
-})
-vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", {})
-vim.keymap.set("n", "<Tab>", "<Cmd>BufferNext<CR>", {})
-vim.keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>", {})
+-- local barbar = require("barbar")
+--
+-- barbar.setup({
+-- 	animation = false,
+-- 	hide = { extensions = false, inactive = false },
+--       tabpages = false,
+--
+-- 	highlight_alternate = false,
+--
+-- 	gitsigns = {
+-- 		added = { enabled = true, icon = "+" },
+-- 		changed = { enabled = true, icon = "~" },
+-- 		deleted = { enabled = true, icon = "-" },
+-- 	},
+-- })
+-- vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", {})
+-- vim.keymap.set("n", "<Tab>", "<Cmd>BufferNext<CR>", {})
+-- vim.keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>", {})

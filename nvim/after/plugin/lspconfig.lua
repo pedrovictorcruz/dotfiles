@@ -18,6 +18,17 @@ lspconfig.lua_ls.setup({
 lspconfig.ts_ls.setup({})
 lspconfig.gopls.setup({})
 lspconfig.kotlin_language_server.setup({})
+lspconfig.tailwindcss.setup({
+	filetypes = {
+		"javascript",
+		"typescript",
+		"typescriptreact",
+		"javascriptreact",
+		"typescript.tsx",
+		"javascript.jsx",
+		"html",
+	},
+})
 lspconfig.pyright.setup({})
 lspconfig.clangd.setup({
 	cmd = { "clangd", "--background-index", "--clang-tidy", "--header-insertion=never" },
