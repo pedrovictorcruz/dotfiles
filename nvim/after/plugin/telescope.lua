@@ -63,7 +63,8 @@ telescope.setup({
 			hidden = true,
 			respect_gitignore = true,
 			layout_config = {
-				height = 0.4,
+                width = 0.6,
+				height = 0.6,
 				prompt_position = "top",
 				preview_cutoff = 120,
 			},

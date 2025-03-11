@@ -1,5 +1,5 @@
-font-family = ZedMono Nerd Font
-font-size = 20
+font-family = JetBrainsMono Nerd Font
+font-size = 23
 theme = GruvboxDarkHard
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
@@ -9,7 +9,7 @@ adjust-cell-height = 35%
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
-window-padding-balance = true 
+window-padding-balance = false 
 window-save-state = always
 macos-titlebar-style=transparent
 window-colorspace = "display-p3"
@@ -52,6 +52,3 @@ keybind = cmd+s>l=goto_split:right
 keybind = cmd+s>z=toggle_split_zoom
 
 keybind = cmd+s>e=equalize_splits
-
-# other
-copy-on-select = clipboard
