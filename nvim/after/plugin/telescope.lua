@@ -63,7 +63,7 @@ telescope.setup({
 			hidden = true,
 			respect_gitignore = true,
 			layout_config = {
-                width = 0.6,
+                width = 0.8,
 				height = 0.6,
 				prompt_position = "top",
 				preview_cutoff = 120,
@@ -92,7 +92,7 @@ telescope.setup({
 			previewer = false,
 			initial_mode = "normal",
 			layout_config = {
-				height = 0.4,
+				height = 0.8,
 				width = 0.6,
 				prompt_position = "top",
 				preview_cutoff = 120,
@@ -146,8 +146,8 @@ telescope.setup({
 				layout_strategy = "horizontal",
 				layout_config = {
 					horizontal = {
-						width = 0.5,
-						height = 0.4,
+						width = 0.8,
+						height = 0.6,
 						preview_width = 0.6,
 					},
 				},

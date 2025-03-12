@@ -42,7 +42,7 @@ vim.keymap.set("n", "gd", function()
 	vim.lsp.buf.definition()
 end, {})
 vim.keymap.set("n", "gr", function()
-	vim.lsp.buf.references()
+	require('telescope.builtin').lsp_references()
 end, {})
 
 vim.keymap.set("n", "<leader>vrn", function()
