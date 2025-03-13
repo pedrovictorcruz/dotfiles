@@ -16,7 +16,9 @@ local file_ignore_patterns = {
 	"target/",
 	"package%-lock%.json",
 	"vendor/",
+	"vendors/",
 	"%.zig-cache/",
+    "%.venv/",
 }
 
 telescope.setup({
