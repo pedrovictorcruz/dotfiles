@@ -1,5 +1,5 @@
-font-family = JetBrainsMono Nerd Font
-font-size = 23
+font-family = FiraMono Nerd Font
+font-size = 18
 theme = GruvboxDarkHard
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
@@ -9,10 +9,11 @@ adjust-cell-height = 35%
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
-window-padding-balance = false 
+window-padding-balance = false
+window-vsync = true
 window-save-state = always
-macos-titlebar-style=transparent
-window-colorspace = "display-p3"
+window-width = 124
+window-height = 30
 background = 1C2021
 # foreground = d4be98
 

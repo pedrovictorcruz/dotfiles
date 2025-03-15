@@ -1,10 +1,20 @@
--- vim.g.gruvbox_material_transparent_background = 0
--- vim.g.gruvbox_material_foreground = "mix"
--- vim.g.gruvbox_material_background = "hard"
--- vim.g.gruvbox_material_ui_contrast = "high"
--- vim.g.gruvbox_material_float_style = "bright"
--- vim.g.gruvbox_material_statusline_style = "material"
--- vim.g.gruvbox_material_cursor = "auto"
---
--- vim.cmd("colorscheme gruvbox-material")
-vim.cmd("colorscheme naysayer")
+require("vscode").setup({
+    -- Alternatively set style in setup
+    -- style = 'light'
+
+    -- Enable transparent background
+    transparent = false,
+
+    -- Enable italic comment
+    italic_comments = true,
+
+    -- Underline `@markup.link.*` variants
+    underline_links = true,
+
+    -- Disable nvim-tree background color
+    disable_nvimtree_bg = true,
+
+    -- Apply theme colors to terminal
+    terminal_colors = true,
+})
+vim.cmd("colorscheme vscode")
