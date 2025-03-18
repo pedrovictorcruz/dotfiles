@@ -14,12 +14,12 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Medium"
 
 [font]
 builtin_box_drawing = true
-size = 16
+size = 18
 
 [font.glyph_offset]
 x = 1

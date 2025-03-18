@@ -22,7 +22,7 @@ local options = {
 	formatting = {
 		format = lspkind.cmp_format({
 			mode = "symbol_text",
-			maxwidth = 50,
+			maxwidth = 20,
 			ellipsis_char = "...",
 		}),
 	},
