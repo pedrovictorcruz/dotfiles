@@ -9,12 +9,11 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "SFMono Nerd Font"
-style = "Medium"
+family = "IBM Plex Mono"
 
 [font]
 builtin_box_drawing = true
-size = 22
+size = 20
 
 [font.offset]
 x = 1
