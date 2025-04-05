@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/pedro/development/Zombie/Assets/" . "Scripts/")
+ ("/home/pedro/development/Zombie/" . "Assets/")
+ ("/home/pedro/development/dotfiles/" . ".emacs.d/")
  ("/home/pedro/development/opengl-engine/Game/" . "src/")
  ("/home/pedro/development/itsm-front/src/screens/auth/" . "login/")
  ("/home/pedro/development/itsm-front/src/screens/" . "auth/")
@@ -31,16 +34,18 @@
  ("/home/pedro/development/work/credit-engine-api/" . "src/")
  ("/home/pedro/development/work/" . "credit-engine/")
  ("/home/pedro/.emacs.d/" . "modes/")
- ("/home/pedro/development/" . "work/")
+ ("/home/pedro/development/" . "dotfiles/")
  ("/home/pedro/" . "development/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/pedro/development/dotfiles/.emacs.d/"
+ "/home/pedro/development/Zombie/Assets/Scripts/"
+ "/home/pedro/development/opengl-engine/Game/src/"
  "/home/pedro/development/work/credit-engine/"
  "/home/pedro/development/work/fgts-api/"
  "/home/pedro/.emacs.d/"
- "/home/pedro/development/opengl-engine/Game/src/"
  "/home/pedro/development/itsm-front/src/screens/auth/login/"
  "/home/pedro/development/work/credit-engine-api/src/domain/consult/dto/"
  "/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/"
@@ -62,81 +67,91 @@
 
 ;; ----- ido-work-file-list -----
 (
- "biome.json"
  "init.el"
+ "EntryPoint.cs"
+ "GameLayer.cpp"
+ "biome.json"
  "README.md"
  "Player.cpp"
  "index.tsx"
  "consult.dto.ts"
  "engine.abstract.ts"
  "consult-scr.service.ts"
- "formatting.el"
- "consult-serasa.service.ts"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/pedro/development/work/credit-engine/" (26569 37105 837624 381000) "components.json" "./" ".env.example" "vite.config.ts" "tsconfig.json" ".gitignore" "README.md" ".vscode/" ".env" "tsconfig.node.json" ".github/" "package-lock.json" "src/" "tailwind.config.js" "package.json" "node_modules/" "biome.json" "public/" "../" "postcss.config.js" "index.html" ".nvmrc" ".git/" ".husky/")
+ ("/home/pedro/development/dotfiles/.emacs.d/" (26609 11423 791406 584000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
+
+ ("/home/pedro/development/Zombie/Assets/Scripts/" (26608 4536 960799 55000) "./" "Player/" "Player.meta" "EntryPoint.cs.meta" "EntryPoint.cs" "../")
+
+ ("/home/pedro/development/Zombie/Assets/" (26604 36060 487985 905000) "./" "InputSystem_Actions.inputactions" "Prefabs.meta" "InputSystem_Actions.inputactions.meta" "Settings/" "Scripts/" "Settings.meta" "Models/" "Scenes.meta" "Models.meta" "Prefabs/" "../" "Scripts.meta" "Scenes/")
+
+ ("/home/pedro/development/Zombie/" (26608 12373 641047 51000) "Assembly-CSharp-Editor.csproj" "./" "Packages/" "Assets/" ".gitignore" ".vscode/" "ProjectSettings/" "Logs/" "UserSettings/" "../" "Assembly-CSharp.csproj" "Library/" "Zombie.sln" ".git/")
+
+ ("/home/pedro/development/work/credit-engine-api/src/domain/simulation/services/" (26606 57039 738982 994000) "./" "validateFirstInstallmentDate.service.ts" "simulate.service.ts" "../" "calcMinDownPayment.service.ts")
+
+ ("/home/pedro/development/work/credit-engine-api/src/infrastructure/http/credere/" (26583 17755 287594 674000) "credere.config.ts" "./" "credere.module.ts" "dtos/" "credere.service.ts" "../")
+
+ ("/home/pedro/development/opengl-engine/Engine/src/" (26596 59229 801174 827000) "Engine.hpp" "./" "Application.cpp" "Renderer/" "Input/" "Window/" "EntryPoint.hpp" "Core/" "../" "Application.hpp" "API/")
+
+ ("/home/pedro/development/opengl-engine/" (26596 59246 201012 176000) "./" "build/" "Game/" "run.sh" "build.sh" ".gitignore" "README.md" ".vscode/" "compile_commands.json" ".clang-format" ".cache/" "CMakeLists.txt" "Engine/" "src/" "../" "build.bat" ".gitmodules" ".git/")
+
+ ("/home/pedro/.emacs.d/modes/" (26579 20317 203177 105000) "tsx-mode.el" "./" "simpc-mode.el" "typescript-mode.el" "kotlin-mode-indent.el" "kotlin-mode.el" "kotlin-mode-lexer.el" "../")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/issue/" (26593 62881 253553 964000) "IssueService.kt" "IssueCategoryService.kt" "./" "IssueCustomFieldService.kt" "IssueUserService.kt" "IssueCommentService.kt" "IssueAttachmentService.kt" "../" "IssueResourceService.kt")
+
+ ("/home/pedro/development/work/go-saffe-back/" (26603 59060 117770 162000) "run.py" "./" "logs/" "request_body.json" ".ropeproject/" "api/" "response_data.json" "startup.sh" "key-pub.asc" "__pycache__/" "config.py" ".flake8" ".gitignore" "README.md" "docker/" "scripts/" ".env" "key-sec.asc" ".venv/" "__init__.py" "requirements.txt" "../" ".env-example" ".git/")
+
+ ("/home/pedro/development/opengl-engine/Engine/src/Core/" (26580 36825 176849 149000) "EditorCamera.cpp" "./" "EditorCamera.hpp" "Common.hpp" "Layer.hpp" "GameCamera.cpp" "Camera.cpp" "Time.hpp" "Time.cpp" "../" "LayerStack.hpp" "Camera.hpp" "LayerStack.cpp")
+
+ ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/scr/interfaces/" (26584 10531 99518 209000) "./" "consult.interface.ts" "../")
+
+ ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/serasa/" (26584 10531 99518 209000) "./" "consult-serasa.service.ts" "serasa.config.ts" "interfaces/" "../" "serasa.module.ts")
+
+ ("/home/pedro/.emacs.d/lisp/" (26579 20317 255055 624000) "./" "../" "formatting.el")
+
+ ("/home/pedro/development/work/credit-engine-api/" (26606 56767 468826 664000) "./" "Dockerfile.prod" "logs/" ".env.production" "tsconfig.build.json" "yarn.lock" "buildspec.yml" "collections/" "test/" "tsconfig.json" ".gitignore" "README.md" "jest.config.ts" ".env" ".env.development" "Dockerfile.dev" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "dist/" "package.json" "node_modules/" "biome.json" ".npmrc" "../" "newrelic_agent.log" ".nvmrc" "ormconfig.ts" ".git/")
+
+ ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/scr/" (26584 10531 99518 209000) "scr.module.ts" "./" "interfaces/" "scr.config.ts" "../" "consult-scr.service.ts")
+
+ ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/" (26584 10531 99518 209000) "./" "motocred/" "engine.module.ts" "engine.abstract.ts" "boavista/" "serasa/" "scr/" "../" "engine.factory.ts" "engine.enum.ts")
+
+ ("/home/pedro/development/work/credit-engine-api/src/domain/consult/dto/" (26584 10531 95518 246000) "./" "consult-detail.dto.ts" "consult.dto.ts" "../")
+
+ ("/home/pedro/development/itsm-front/src/screens/auth/login/" (26574 18741 680300 389000) "./" "index.tsx" "../" "components/")
+
+ ("/home/pedro/development/opengl-engine/Game/src/" (26596 59229 804993 343000) "./" "Player.hpp" "Layers/" "GameLayer.cpp" "Main.cpp" "../" "GameLayer.hpp" "Player.cpp")
+
+ ("/home/pedro/.emacs.d/" (26609 11059 541476 185000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
+
+ ("/home/pedro/development/work/fgts-api/" (26606 38352 133711 138000) "./" "logs/" ".env.production" "tsconfig.build.json" "collections/" "Dockerfile.production" "test/" "tsconfig.json" "Dockerfile.development" ".gitignore" "README.md" ".env" ".env.development" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "dist/" "package.json" "node_modules/" "biome.json" ".npmrc" "../" "views/" "newrelic_agent.log" ".zed/" ".nvmrc" ".git/")
+
+ ("/home/pedro/development/work/credit-engine/" (26606 51912 315476 476000) "components.json" "./" ".env.example" "vite.config.ts" "tsconfig.json" ".gitignore" "README.md" ".vscode/" ".env" "tsconfig.node.json" ".github/" "package-lock.json" "src/" "tailwind.config.js" "package.json" "node_modules/" "biome.json" "public/" "../" "types/" "postcss.config.js" "index.html" ".nvmrc" ".git/" ".husky/")
+
+ ("/home/pedro/development/dotfiles/" (26608 30850 778698 908000) "i3status/" "./" "alacritty/" ".emacs.d/" "nvim/" "tmux/" "i3/" "ghostty/" ".vim/" "wezterm/" "../" "kitty/" ".git/")
+
+ ("/home/pedro/development/" (26603 56536 567714 228000) "./" "tmux-sessionizer/" "notes/" "work/" "opengl-engine/" "vulkan-engine/" "itsm-front/" "Zombie/" "raylib-game/" "dotfiles/" "itsm-api/" "python-threads/" "../")
+
+ ("/home/pedro/" (26609 8830 626314 26000) ".var/" "DataGripProjects/" ".gitconfig" ".npm/" ".bash_history" "Pictures/" "./" "tmp/" ".bash_logout" ".emacs.d/" "vimfiles/" ".plastic4/" ".nuget/" ".pki/" ".vimrc" ".bash_profile" "Unity/" ".inputrc" "Videos/" ".omnisharp/" ".android/" ".windsurf/" ".pulse-cookie" ".steam/" "development/" "Postman/" ".emulator_console_auth_token" "regulaforensics.txt" ".mysql/" ".cargo/" ".XCompose" ".flutter" ".config/" ".yarnrc" ".vscode/" "Desktop/" ".nv/" ".dartServer/" ".gradle/" "Templates/" ".cache/" ".sdirs" ".bashrc" ".claude.json" ".mozilla/" ".claude/" ".renderdoc/" ".oh-my-bash/" "todo.md" ".gnupg/" ".osh-update" "Downloads/" "Android/" ".pyenv/" ".cursor/" "go/" ".steampath" ".ServiceHub/" ".nvm/" ".1password/" ".python_history" ".vim/" ".epic/" ".local/" ".awt/" ".steampid" ".npmrc" ".sdkman/" ".java/" ".dotnet/" "../" ".pub-cache/" ".ssh/" ".tmux/" ".tmux.conf" "Documents/" "Library/" "Music/" ".dart-tool/" ".codeium/" ".bashrc.omb-backup-20250207010409" ".electron-gyp/" ".viminfo" ".yarn/" "Public/")
 
  ("/home/pedro/development/work/auto-api/" (26576 10325 289759 341000) "config.ts" "./" ".env.production" "tsconfig.build.json" "collections/" "Dockerfile.production" "tsconfig.json" "Dockerfile.development" ".gitignore" "README.md" ".eslintrc.js" "jest.config.ts" ".env" "migrations.datasource.js" ".env.development" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "package.json" ".prettierrc" "node_modules/" "public/" ".npmrc" "../" "views/" ".nvmrc" "ormconfig.ts" ".git/")
 
- ("/home/pedro/development/work/fgts-api/" (26576 16279 253502 41000) "./" ".env.production" "tsconfig.build.json" "collections/" "Dockerfile.production" "test/" "tsconfig.json" "Dockerfile.development" ".gitignore" "README.md" ".eslintrc.js" ".env.development" "#README.md#" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "package.json" ".prettierrc" "node_modules/" ".npmrc" "../" "views/" ".nvmrc" ".git/")
-
- ("/home/pedro/.emacs.d/" (26576 16318 577691 826000) "lisp/" "./" "elpa/" "#init.el#" "modes/" "transient/" "ido.last" "init.el" "init.el~" "auto-save-list/" "../" "themes/")
-
  ("/home/pedro/development/work/" (26576 15405 297258 235000) "fgts-api/" "./" "credit-engine-api/" "go_saffe_kotlin/" "motocred-api/" "go_saffe_flutter/" "credit-engine/" "go-saffe-react-native/" "go-saffe-capture/" "go-saffe-back/" "../" "go-saffe-console/" "auto-api/")
-
- ("/home/pedro/" (26575 42498 760227 897000) ".var/" "DataGripProjects/" ".gitconfig" ".npm/" ".bash_history" "Pictures/" "./" "tmp/" ".bash_logout" ".emacs.d/" ".nuget/" ".pki/" ".bash_profile" ".inputrc" "Videos/" ".android/" ".pulse-cookie" ".steam/" "development/" "Postman/" ".emulator_console_auth_token" ".mysql/" ".cargo/" ".XCompose" ".flutter" ".config/" ".yarnrc" ".vscode/" "Desktop/" ".nv/" ".dartServer/" ".gradle/" "Templates/" ".cache/" ".sdirs" ".bashrc" ".claude.json" ".mozilla/" ".claude/" ".renderdoc/" ".oh-my-bash/" "todo.md" ".gnupg/" ".osh-update" "Downloads/" "Android/" ".pyenv/" ".cursor/" "go/" ".steampath" ".nvm/" ".1password/" ".vim/" ".epic/" ".local/" ".awt/" ".steampid" ".npmrc" ".sdkman/" ".java/" ".dotnet/" "../" ".pub-cache/" ".ssh/" ".tmux/" ".tmux.conf" "Documents/" "Library/" "Music/" ".dart-tool/" ".bashrc.omb-backup-20250207010409" ".electron-gyp/" ".viminfo" ".yarn/" "Public/")
-
- ("/home/pedro/development/opengl-engine/Game/src/" (26571 58233 444187 992000) "./" "Player.hpp" "GameLayer.cpp" "Main.cpp" "../" "GameLayer.hpp" "Player.cpp")
 
  ("/home/pedro/development/opengl-engine/Game/" (26571 40247 159704 842000) "./" "CMakeLists.txt" "src/" "assets/" "../")
 
- ("/home/pedro/development/opengl-engine/Engine/src/Core/" (26573 8384 366574 593000) "EditorCamera.cpp" "./" "EditorCamera.hpp" "Layer.hpp" "Camera.cpp" "Time.hpp" "Time.cpp" "../" "LayerStack.hpp" "Camera.hpp" "LayerStack.cpp")
-
- ("/home/pedro/development/opengl-engine/Engine/src/" (26571 20360 329333 512000) "Engine.hpp" "./" "Application.cpp" "Renderer/" "Input/" "Window/" "EntryPoint.hpp" "Core/" "../" "Application.hpp" "API/")
-
  ("/home/pedro/development/opengl-engine/Engine/" (26571 57778 813028 767000) "./" "CMakeLists.txt" "vendors/" "src/" "assets/" "../")
-
- ("/home/pedro/development/opengl-engine/" (26573 41376 443402 470000) "./" "build/" "Game/" "run.sh" "build.sh" ".gitignore" "README.md" ".vscode/" "compile_commands.json" ".clang-format" ".cache/" "CMakeLists.txt" "Engine/" "../" ".gitmodules" ".git/")
-
- ("/home/pedro/development/" (26575 7377 203519 78000) "./" "tmux-sessionizer/" "work/" "opengl-engine/" "itsm-front/" "dotfiles/" "itsm-api/" "python-threads/" "../")
-
- ("/home/pedro/development/itsm-front/src/screens/auth/login/" (26564 20683 286921 744000) "./" "index.tsx" "../" "components/")
 
  ("/home/pedro/development/itsm-front/src/screens/auth/" (26536 11731 735867 413000) "./" "login/" "../" "register/")
 
  ("/home/pedro/development/itsm-front/src/screens/" (26536 11098 352819 603000) "./" "auth/" "../" "dashboard/")
-
- ("/home/pedro/development/work/credit-engine-api/src/domain/simulation/services/" (26558 8291 758699 156000) "./" "validateFirstInstallmentDate.service.ts" "simulate.service.ts" "../" "calcMinDownPayment.service.ts")
-
- ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/issue/" (26560 24540 885892 104000) "IssueService.kt" "./" "Issue.kt" "../" "IssueRepository.kt")
-
- ("/home/pedro/development/work/go-saffe-back/" (26559 21241 332604 833000) "run.py" "./" "api/" "startup.sh" "key-pub.asc" "__pycache__/" "config.py" ".flake8" ".gitignore" "README.md" "docker/" "scripts/" ".env" "key-sec.asc" "__init__.py" "requirements.txt" "../" ".env-example" ".git/")
-
- ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/scr/interfaces/" (26559 6345 544844 600000) "./" "consult.interface.ts" "../")
-
- ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/serasa/" (26558 4604 292015 263000) "./" "consult-serasa.service.ts" "serasa.config.ts" "interfaces/" "../" "serasa.module.ts")
-
- ("/home/pedro/.emacs.d/lisp/" (26557 50058 932905 473000) "./" "../" "formatting.el")
-
- ("/home/pedro/development/work/credit-engine-api/" (26559 33735 347962 715000) "./" "Dockerfile.prod" "logs/" ".env.production" "tsconfig.build.json" "yarn.lock" "buildspec.yml" "collections/" "test/" "tsconfig.json" ".gitignore" "README.md" "jest.config.ts" ".env" ".env.development" "Dockerfile.dev" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "dist/" "package.json" "node_modules/" "biome.json" ".npmrc" "../" "newrelic_agent.log" ".nvmrc" "ormconfig.ts" ".git/")
-
- ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/scr/" (26559 14877 218495 322000) "scr.module.ts" "./" "interfaces/" "scr.config.ts" "../" "consult-scr.service.ts")
-
- ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/" (26559 11214 814668 356000) "./" "motocred/" "engine.module.ts" "engine.abstract.ts" "boavista/" "serasa/" "scr/" "../" "engine.factory.ts" "engine.enum.ts")
-
- ("/home/pedro/development/work/credit-engine-api/src/domain/consult/dto/" (26558 8438 38847 777000) "./" "consult-detail.dto.ts" "consult.dto.ts" "../")
 
  ("/home/pedro/development/itsm-front/src/" (26564 20512 362553 770000) "./" "api/" "index.css" "App.tsx" "vite-env.d.ts" "routes/" "contexts/" "lib/" "screens/" "hooks/" "assets/" "../" "components/" "main.tsx")
 
  ("/home/pedro/development/itsm-front/" (26564 17832 475561 25000) "components.json" "./" "tsconfig.app.json" "vite.config.ts" "tsconfig.json" ".gitignore" "README.md" ".env" "tsconfig.node.json" "package-lock.json" "src/" "package.json" "node_modules/" "biome.json" "public/" "../" "index.html" ".git/")
 
  ("/home/pedro/development/work/credit-engine-api/src/domain/consult/" (26548 48905 772979 482000) "./" "services/" "entities/" "controllers/" "dto/" "consult.module.ts" "../")
-
- ("/home/pedro/development/work/credit-engine-api/src/infrastructure/http/credere/" (26557 48170 248232 778000) "credere.config.ts" "./" "credere.module.ts" "dtos/" "credere.service.ts" "../")
-
- ("/home/pedro/.emacs.d/modes/" (26556 48231 723131 127000) "tsx-mode.el" "./" "simpc-mode.el" "typescript-mode.el" "kotlin-mode-indent.el" "kotlin-mode.el" "kotlin-mode-lexer.el" "../")
 
  ("/home/pedro/development/work/credit-engine-api/src/infrastructure/http/bmp/" (26548 48905 775180 799000) "./" "interfaces/" "bmp.module.ts" "bmp.service.ts" "bmp.config.ts" "../")
 

@@ -3,10 +3,10 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-(set-frame-font "RobotoMono Nerd Font 20" nil t)
+(set-frame-font "FiraMono Nerd Font 20" nil t)
 
 ;; Diretório padrão
-;;(setq default-directory "d:/Development")
+(setq default-directory "~/development")
 
 ;; Backups e avisos
 (setq make-backup-files nil)
@@ -18,6 +18,9 @@
 (setq display-line-numbers 'relative)
 (global-auto-revert-mode 1)
 (global-subword-mode 1)
+
+(setq shell-file-name "/usr/bin/bash")
+(setenv "SHELL" shell-file-name)
 
 ;; CUA mode
 (cua-mode 1)
@@ -31,7 +34,6 @@
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
                          ("gnu"   . "https://elpa.gnu.org/packages/")))
 (package-initialize)
-
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -44,19 +46,6 @@
 (setq evil-want-keybinding nil)
 (setq evil-want-C-u-scroll t)
 
-(use-package evil-leader
-  :init
-  (setq evil-leader/in-all-states t)
-  :config
-  (global-evil-leader-mode)
-  (evil-leader/set-leader "<SPC>")
-  (evil-leader/set-key
-    "f" 'find-file
-    "b" 'switch-to-buffer
-    "k" 'kill-buffer
-    "g" 'magit-status
-    "q" 'save-buffers-kill-terminal))
-
 ;; Evil
 (use-package evil
   :config
@@ -67,13 +56,34 @@
   :config
   (evil-collection-init))
 
+;; General for leader key
+(use-package general
+  :config
+  (general-create-definer my/leader
+    :states '(normal visual)
+    :prefix "SPC"
+    :global-prefix "C-SPC")
+
+  (my/leader
+    "f d" 'find-file
+    "f f" 'lsp-format-buffer
+    "b"  'switch-to-buffer
+    "k"  'kill-buffer
+    "g"  '(:ignore t :which-key "git")
+    "g s" 'magit-status
+    "q"  'save-buffers-kill-terminal
+    "K"  'lsp-ui-doc-show
+    "r n" 'lsp-rename
+    "g d" 'lsp-find-definition
+    "g r" 'lsp-find-references))
+
 ;; IDO
 (use-package ido
   :init
   (setq ido-enable-flex-matching t
         ido-create-new-buffer 'always
         confirm-nonexistent-file-or-buffer nil
-        ido-ignore-buffers '("\\` " "^\*"))
+        ido-ignore-buffers '("\\` " "^\\*"))
   :config
   (ido-mode 1)
   (ido-everywhere 1)
@@ -85,11 +95,6 @@
 ;; Temas
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
 (load-theme 'naysayer t)
-
-;; Bash shell via Git
-(setq shell-file-name "C:/Program Files/Git/bin/bash.exe"
-      explicit-bash-args '("-i")
-      comint-prompt-read-only t)
 
 ;; Project
 (use-package project)
@@ -107,15 +112,34 @@
 ;; Reformatter (formatting.el usa isso)
 (use-package reformatter)
 
+;; LSP
+(use-package lsp-mode
+  :hook ((typescript-mode . lsp)
+         (kotlin-mode . lsp)
+         (c-mode . lsp)
+         (c++-mode . lsp)
+         (csharp-mode . lsp))
+  :commands lsp
+  :config
+  (setq lsp-enable-snippet nil))
+
+(use-package lsp-ui
+  :commands lsp-ui-mode)
+
 ;; Linguagens
 (use-package typescript-mode
   :mode ("\\.ts\\'" "\\.tsx\\'" "\\.js\\'" "\\.jsx\\'"))
 
 (use-package kotlin-mode
-  :mode ("\\.kts?\\'"))
+  :mode ("\\.kts?\\'")
+  :config
+  (setq kotlin-tab-width 4))
 
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
+(use-package csharp-mode
+  :mode ("\\.cs\\'" . csharp-mode))
 
 ;; Move lines
 (defun move-line-up () (interactive) (transpose-lines 1) (previous-line 2))
@@ -129,16 +153,6 @@
 ;; Formatting custom
 (require 'formatting)
 
-;; Custom-set removido
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(package-selected-packages nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(custom-set-faces)
