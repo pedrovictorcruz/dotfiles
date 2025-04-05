@@ -37,3 +37,22 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.o.cmdheight = 0
 vim.o.laststatus = 3
+
+vim.opt.wildmenu = true
+vim.opt.wildmode = { "longest:full", "full" }
+vim.opt.wildignore = { "*.o", "*.obj", "*.pyc", "*.class", "node_modules/*", ".git/*" }
+
+
+vim.api.nvim_create_user_command("E", function(opts)
+  local path = opts.args
+
+  if path == "" then
+    path = "."
+  end
+
+  if vim.fn.isdirectory(path) == 1 then
+    vim.api.nvim_input(":E " .. path .. "\t")
+  else
+    vim.cmd("edit " .. vim.fn.fnameescape(path))
+  end
+end, { nargs = "?", complete = "file" })
