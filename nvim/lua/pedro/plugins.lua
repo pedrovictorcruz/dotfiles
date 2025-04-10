@@ -36,11 +36,21 @@ return {
 		---@module 'oil'
 		---@type oil.SetupOpts
 		opts = {},
-		-- Optional dependencies
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
-		-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
-		-- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
 		lazy = false,
 	},
 	{ "zbirenbaum/copilot.lua" },
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = {
+			{ "nvim-lua/plenary.nvim" },
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+				build = "make",
+				cond = function()
+					return vim.fn.executable("make") == 1
+				end,
+			},
+		},
+	},
 }

@@ -22,5 +22,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
 vim.keymap.set("n", "<A-c>", ":bd<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Tab>", ":bn<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<S-Tab>", ":bp<CR>", { noremap = true, silent = true })
-
-vim.keymap.set("n", "<leader>fd", ":E ", { noremap = true })
