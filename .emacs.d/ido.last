@@ -2,6 +2,18 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/pedro/development/work/go-saffe-capture/src/" . "helpers/")
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/services/" . "user/")
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/" . "services/")
+ ("/home/pedro/development/work/fgts-api/src/domain/simulation/" . "services/")
+ ("/home/pedro/development/work/fgts-api/src/domain/" . "simulation/")
+ ("/home/pedro/development/work/fgts-api/src/" . "domain/")
+ ("/home/pedro/development/work/fgts-backoffice/src/pages/panel/" . "calculator/")
+ ("/home/pedro/development/work/fgts-backoffice/src/pages/" . "panel/")
+ ("/home/pedro/development/work/fgts-backoffice/src/" . "pages/")
+ ("/home/pedro/development/work/fgts-backoffice/" . "src/")
+ ("/home/pedro/development/work/fgts-api/" . "src/")
+ ("/" . "home/")
  ("/home/pedro/development/Zombie/Assets/" . "Scripts/")
  ("/home/pedro/development/Zombie/" . "Assets/")
  ("/home/pedro/development/dotfiles/" . ".emacs.d/")
@@ -15,7 +27,7 @@
  ("/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/" . "scr/")
  ("/home/" . "pedro/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/" . "issue/")
- ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/" . "domain/")
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/" . "application/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/" . "itsm_api/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/" . "modti/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/" . "com/")
@@ -32,20 +44,29 @@
  ("/home/pedro/development/work/credit-engine-api/src/domain/" . "consult/")
  ("/home/pedro/development/work/credit-engine-api/src/" . "domain/")
  ("/home/pedro/development/work/credit-engine-api/" . "src/")
- ("/home/pedro/development/work/" . "credit-engine/")
+ ("/home/pedro/development/work/" . "go-saffe-capture/")
  ("/home/pedro/.emacs.d/" . "modes/")
- ("/home/pedro/development/" . "dotfiles/")
- ("/home/pedro/" . "development/")
+ ("/home/pedro/development/" . "work/")
+ ("/home/pedro/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/pedro/development/dotfiles/.emacs.d/"
+ "/home/pedro/.emacs.d/"
+ "/home/pedro/development/work/go-saffe-capture/src/enums/"
+ "/home/pedro/development/work/go-saffe-capture/src/controllers/"
+ "/home/pedro/development/work/go-saffe-capture/"
+ "/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/services/user/"
+ "/home/pedro/development/itsm-api/"
+ "/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/issue/"
  "/home/pedro/development/Zombie/Assets/Scripts/"
+ "/home/pedro/development/notes/"
+ "/home/pedro/development/work/fgts-api/src/domain/simulation/services/"
+ "/home/pedro/development/work/fgts-backoffice/src/pages/panel/calculator/"
+ "/home/pedro/development/dotfiles/.emacs.d/"
  "/home/pedro/development/opengl-engine/Game/src/"
  "/home/pedro/development/work/credit-engine/"
  "/home/pedro/development/work/fgts-api/"
- "/home/pedro/.emacs.d/"
  "/home/pedro/development/itsm-front/src/screens/auth/login/"
  "/home/pedro/development/work/credit-engine-api/src/domain/consult/dto/"
  "/home/pedro/development/work/credit-engine-api/src/infrastructure/engines/"
@@ -57,7 +78,6 @@
  "/home/pedro/development/opengl-engine/Engine/src/Core/"
  "/home/pedro/development/work/go-saffe-back/"
  "/home/pedro/development/work/credit-engine-api/src/infrastructure/http/bmp/"
- "/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/issue/"
  "/home/pedro/.emacs.d/modes/"
  "/home/pedro/development/opengl-engine/"
  "/home/pedro/development/opengl-engine/Engine/src/"
@@ -68,26 +88,78 @@
 ;; ----- ido-work-file-list -----
 (
  "init.el"
+ "transaction-type.enum.ts"
+ "transaction.controller.ts"
+ "CHANGELOG.md"
+ "RegisterUserService.kt"
+ "build.gradle.kts"
+ "IssueAttachmentService.kt"
  "EntryPoint.cs"
- "GameLayer.cpp"
- "biome.json"
- "README.md"
- "Player.cpp"
- "index.tsx"
- "consult.dto.ts"
- "engine.abstract.ts"
- "consult-scr.service.ts"
+ "index.md"
+ "simulate.service.ts"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/pedro/development/dotfiles/.emacs.d/" (26609 11423 791406 584000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
+ ("/home/pedro/.emacs.d/" (26613 12771 352242 205000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "tree-sitter/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
+
+ ("/home/pedro/" (26613 12449 218 948000) ".var/" "DataGripProjects/" ".gitconfig" ".npm/" ".bash_history" "Pictures/" "./" "tmp/" ".bash_logout" ".emacs.d/" "vimfiles/" ".plastic4/" ".nuget/" ".pki/" ".vimrc" ".bash_profile" "Unity/" ".inputrc" "Videos/" ".omnisharp/" ".android/" ".windsurf/" ".pulse-cookie" ".steam/" "development/" "Postman/" ".emulator_console_auth_token" "regulaforensics.txt" ".mysql/" ".cargo/" ".XCompose" ".flutter" ".config/" ".yarnrc" ".vscode/" "Desktop/" ".nv/" ".dartServer/" ".gradle/" "Templates/" ".cache/" ".sdirs" ".bashrc" ".claude.json" ".mozilla/" ".claude/" ".renderdoc/" ".oh-my-bash/" "todo.md" ".gnupg/" ".osh-update" "Downloads/" "Android/" ".pyenv/" ".cursor/" "go/" ".steampath" ".ServiceHub/" ".nvm/" ".1password/" ".python_history" ".vim/" ".epic/" ".local/" ".awt/" ".steampid" ".npmrc" ".sdkman/" ".java/" ".dotnet/" "../" ".pub-cache/" ".ssh/" ".tmux/" ".tmux.conf" "Documents/" "Library/" "Music/" ".dart-tool/" ".codeium/" ".bashrc.omb-backup-20250207010409" ".electron-gyp/" ".viminfo" ".yarn/" "Public/")
+
+ ("/home/pedro/development/dotfiles/.emacs.d/" (26613 9497 85328 871000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "tree-sitter/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/issue/" (26612 23644 748814 630000) "IssueService.kt" "IssueCategoryService.kt" "./" "IssueCustomFieldService.kt" "IssueUserService.kt" "IssueCommentService.kt" "IssueAttachmentService.kt" "../" "IssueResourceService.kt")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/services/user/" (26612 23723 727703 392000) "./" "GetUserService.kt" "WorkspaceOnboardingService.kt" "RegisterUserService.kt" "LoginUserService.kt" "../")
+
+ ("/home/pedro/development/work/go-saffe-capture/src/helpers/" (26587 5553 260312 4000) "./" "timeoutComponent.ts" "documentInstructionsComponent.ts" "componentWrapper.ts" "cancelTransaction.ts" "errorComponent.ts" "successComponent.ts" "documentCollectingComponent.ts" "loadingComponent.ts" "constants.ts" "../" "components/" "dataCollectingComponent.ts")
+
+ ("/home/pedro/development/work/go-saffe-capture/src/controllers/" (26613 10851 395897 92000) "transaction.controller.ts" "./" "../")
+
+ ("/home/pedro/development/work/go-saffe-capture/src/" (26613 9587 841721 95000) "./" "index.ts" "locales/" "controllers/" "helpers/" ".DS_Store" "assets/" "../" "index.html" "models/")
+
+ ("/home/pedro/development/work/go-saffe-capture/" (26587 5553 260312 4000) ".babelrc" "server.js" "./" ".env.production" "yarn.lock" "cypress/" ".parcelrc" ".gitignore" "README.md" ".htmlnanorc.js" "FaceTecBrowserSDKApp-decode.js" ".cache/" ".env.development" "src/" ".DS_Store" "dist/" "package.json" "node_modules/" "CHANGELOG.md" "../" ".idea/" "yarn-error.log" ".gitmodules" "cypress.json" ".nvmrc" ".proxyrc" ".git/")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/services/" (26571 41098 690935 680000) "role/" "./" "userrole/" "priority/" "status/" "category/" "workspaceuser/" "workspace/" "resource/" "resourcedependency/" "customfield/" "issue/" "company/" "provider/" "sla/" "permission/" "rolepermission/" "../" "user/")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/" (26575 41458 682952 135000) "./" "services/" "dtos/" "exceptions/" "../")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/" (26593 62881 253553 964000) "role/" "./" "userrole/" "priority/" "status/" "category/" "invite/" "workspaceuser/" "workspace/" "customfield/" "issue/" "company/" "sla/" "permission/" "rolepermission/" "../" "newrelic/" "user/")
+
+ ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/" (26575 41458 682952 135000) "domain/" "./" "infrastructure/" "ItsmApiApplication.kt" "utils/" "../" "inbounds/" "application/")
+
+ ("/home/pedro/development/itsm-api/" (26593 63365 504803 729000) "./" "build/" ".kotlin/" "build.gradle.kts" "test-newrelic-case.sh" ".gitattributes" ".gitignore" ".gradle/" "gradlew" "settings.gradle.kts" "src/" "itsm-api/" "docker-compose.yml" "gradlew.bat" "../" ".idea/" "gradle/" "kls_database.db" ".git/")
+
+ ("/home/pedro/development/Zombie/" (26609 11692 781333 364000) "Assembly-CSharp-Editor.csproj" "./" "Temp/" "Packages/" "Assets/" ".gitignore" ".vscode/" "ProjectSettings/" "Logs/" "UserSettings/" "../" "Assembly-CSharp.csproj" "Library/" "Zombie.sln" ".git/")
+
+ ("/home/pedro/development/notes/" (26611 58497 745590 313000) "./" "../" "index.md")
+
+ ("/home/pedro/development/work/fgts-api/src/domain/simulation/services/" (26611 56238 693254 769000) "./" "getAll.service.ts" "getDetails.service.ts" "simulate.service.ts" "remove.service.ts" "../")
+
+ ("/home/pedro/development/work/fgts-api/src/domain/simulation/" (26588 10207 14856 312000) "./" "services/" "simulation.module.ts" "entities/" "controllers/" "dto/" "../")
+
+ ("/home/pedro/development/work/fgts-api/src/domain/" (26576 15407 532017 971000) "./" "simulation/" "proposal/" "invite/" "store/" "proposalEvent/" "company/" "../" "dashboard/" "customer/" "user/")
+
+ ("/home/pedro/development/work/fgts-backoffice/src/pages/panel/calculator/" (26611 54575 153758 123000) "./" "page.tsx" "../")
+
+ ("/home/pedro/development/work/fgts-backoffice/src/pages/panel/" (26611 54575 155238 943000) "./" "new-dashboard/" "companies/" "calculator/" "customers/" "stores/" "simulation-details/" "../" "faq/" "users/" "proposal-details/" "simulations/" "dashboard/" "proposals/")
+
+ ("/home/pedro/development/work/fgts-backoffice/src/pages/" (26611 54575 155411 120000) "./" "auth/" "panel/" "withErrorBoundary.tsx" "../")
+
+ ("/home/pedro/development/work/fgts-backoffice/src/components/" (26611 54575 152640 436000) "./" "icons.tsx" "sidebar.tsx" "ui/" "events-details.tsx" "event-timeline.tsx" "data-table.tsx" "checkbox.tsx" "container.tsx" "count-up.tsx" "mode-toggle.tsx" "navbar.tsx" "theme-provider.tsx" "../" "skeletonRow.tsx")
+
+ ("/home/pedro/development/work/fgts-backoffice/src/" (26611 54575 155471 739000) "./" "api/" "test/" "globals.css" "App.tsx" "App.spec.tsx" "vite-env.d.ts" "routes/" "lib/" "pages/" "hooks/" "assets/" "../" "components/" "context/" "main.tsx")
+
+ ("/home/pedro/development/work/fgts-backoffice/" (26611 54575 155471 739000) "vercel.json" "components.json" "./" ".env.example" "CLAUDE.md" "vite.config.ts" "tsconfig.json" ".gitignore" "README.md" ".vscode/" "tsconfig.node.json" ".github/" "package-lock.json" "src/" "tailwind.config.js" "package.json" "biome.json" "public/" "../" "postcss.config.js" "index.html" ".nvmrc" ".git/" ".husky/")
+
+ ("/home/pedro/development/work/" (26611 54572 870957 152000) "fgts-api/" "./" "collections/" "credit-engine-api/" "go_saffe_kotlin/" "motocred-api/" "go_saffe_flutter/" "auto/" "fgts-backoffice/" "ocr-example/" "credit-engine/" "go-saffe-react-native/" "go-saffe-capture/" "go-saffe-back/" "../" "go-saffe-console/" "auto-api/")
+
+ ("/home/pedro/development/work/fgts-api/src/" (26576 15407 533356 420000) "domain/" "./" "infrastructure/" "config/" "app.module.ts" "main.ts" "health/" "utils/" "../")
+
+ ("/app/" (26609 8769 48771 501000) "./" ".ref" "share/" "lib/" "manifest.json" "bin/" "../" "libexec/")
 
  ("/home/pedro/development/Zombie/Assets/Scripts/" (26608 4536 960799 55000) "./" "Player/" "Player.meta" "EntryPoint.cs.meta" "EntryPoint.cs" "../")
 
  ("/home/pedro/development/Zombie/Assets/" (26604 36060 487985 905000) "./" "InputSystem_Actions.inputactions" "Prefabs.meta" "InputSystem_Actions.inputactions.meta" "Settings/" "Scripts/" "Settings.meta" "Models/" "Scenes.meta" "Models.meta" "Prefabs/" "../" "Scripts.meta" "Scenes/")
-
- ("/home/pedro/development/Zombie/" (26608 12373 641047 51000) "Assembly-CSharp-Editor.csproj" "./" "Packages/" "Assets/" ".gitignore" ".vscode/" "ProjectSettings/" "Logs/" "UserSettings/" "../" "Assembly-CSharp.csproj" "Library/" "Zombie.sln" ".git/")
 
  ("/home/pedro/development/work/credit-engine-api/src/domain/simulation/services/" (26606 57039 738982 994000) "./" "validateFirstInstallmentDate.service.ts" "simulate.service.ts" "../" "calcMinDownPayment.service.ts")
 
@@ -98,8 +170,6 @@
  ("/home/pedro/development/opengl-engine/" (26596 59246 201012 176000) "./" "build/" "Game/" "run.sh" "build.sh" ".gitignore" "README.md" ".vscode/" "compile_commands.json" ".clang-format" ".cache/" "CMakeLists.txt" "Engine/" "src/" "../" "build.bat" ".gitmodules" ".git/")
 
  ("/home/pedro/.emacs.d/modes/" (26579 20317 203177 105000) "tsx-mode.el" "./" "simpc-mode.el" "typescript-mode.el" "kotlin-mode-indent.el" "kotlin-mode.el" "kotlin-mode-lexer.el" "../")
-
- ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/issue/" (26593 62881 253553 964000) "IssueService.kt" "IssueCategoryService.kt" "./" "IssueCustomFieldService.kt" "IssueUserService.kt" "IssueCommentService.kt" "IssueAttachmentService.kt" "../" "IssueResourceService.kt")
 
  ("/home/pedro/development/work/go-saffe-back/" (26603 59060 117770 162000) "run.py" "./" "logs/" "request_body.json" ".ropeproject/" "api/" "response_data.json" "startup.sh" "key-pub.asc" "__pycache__/" "config.py" ".flake8" ".gitignore" "README.md" "docker/" "scripts/" ".env" "key-sec.asc" ".venv/" "__init__.py" "requirements.txt" "../" ".env-example" ".git/")
 
@@ -123,8 +193,6 @@
 
  ("/home/pedro/development/opengl-engine/Game/src/" (26596 59229 804993 343000) "./" "Player.hpp" "Layers/" "GameLayer.cpp" "Main.cpp" "../" "GameLayer.hpp" "Player.cpp")
 
- ("/home/pedro/.emacs.d/" (26609 11059 541476 185000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
-
  ("/home/pedro/development/work/fgts-api/" (26606 38352 133711 138000) "./" "logs/" ".env.production" "tsconfig.build.json" "collections/" "Dockerfile.production" "test/" "tsconfig.json" "Dockerfile.development" ".gitignore" "README.md" ".env" ".env.development" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "dist/" "package.json" "node_modules/" "biome.json" ".npmrc" "../" "views/" "newrelic_agent.log" ".zed/" ".nvmrc" ".git/")
 
  ("/home/pedro/development/work/credit-engine/" (26606 51912 315476 476000) "components.json" "./" ".env.example" "vite.config.ts" "tsconfig.json" ".gitignore" "README.md" ".vscode/" ".env" "tsconfig.node.json" ".github/" "package-lock.json" "src/" "tailwind.config.js" "package.json" "node_modules/" "biome.json" "public/" "../" "types/" "postcss.config.js" "index.html" ".nvmrc" ".git/" ".husky/")
@@ -133,11 +201,7 @@
 
  ("/home/pedro/development/" (26603 56536 567714 228000) "./" "tmux-sessionizer/" "notes/" "work/" "opengl-engine/" "vulkan-engine/" "itsm-front/" "Zombie/" "raylib-game/" "dotfiles/" "itsm-api/" "python-threads/" "../")
 
- ("/home/pedro/" (26609 8830 626314 26000) ".var/" "DataGripProjects/" ".gitconfig" ".npm/" ".bash_history" "Pictures/" "./" "tmp/" ".bash_logout" ".emacs.d/" "vimfiles/" ".plastic4/" ".nuget/" ".pki/" ".vimrc" ".bash_profile" "Unity/" ".inputrc" "Videos/" ".omnisharp/" ".android/" ".windsurf/" ".pulse-cookie" ".steam/" "development/" "Postman/" ".emulator_console_auth_token" "regulaforensics.txt" ".mysql/" ".cargo/" ".XCompose" ".flutter" ".config/" ".yarnrc" ".vscode/" "Desktop/" ".nv/" ".dartServer/" ".gradle/" "Templates/" ".cache/" ".sdirs" ".bashrc" ".claude.json" ".mozilla/" ".claude/" ".renderdoc/" ".oh-my-bash/" "todo.md" ".gnupg/" ".osh-update" "Downloads/" "Android/" ".pyenv/" ".cursor/" "go/" ".steampath" ".ServiceHub/" ".nvm/" ".1password/" ".python_history" ".vim/" ".epic/" ".local/" ".awt/" ".steampid" ".npmrc" ".sdkman/" ".java/" ".dotnet/" "../" ".pub-cache/" ".ssh/" ".tmux/" ".tmux.conf" "Documents/" "Library/" "Music/" ".dart-tool/" ".codeium/" ".bashrc.omb-backup-20250207010409" ".electron-gyp/" ".viminfo" ".yarn/" "Public/")
-
  ("/home/pedro/development/work/auto-api/" (26576 10325 289759 341000) "config.ts" "./" ".env.production" "tsconfig.build.json" "collections/" "Dockerfile.production" "tsconfig.json" "Dockerfile.development" ".gitignore" "README.md" ".eslintrc.js" "jest.config.ts" ".env" "migrations.datasource.js" ".env.development" ".github/" "package-lock.json" "src/" "nest-cli.json" "docker-compose.yml" "package.json" ".prettierrc" "node_modules/" "public/" ".npmrc" "../" "views/" ".nvmrc" "ormconfig.ts" ".git/")
-
- ("/home/pedro/development/work/" (26576 15405 297258 235000) "fgts-api/" "./" "credit-engine-api/" "go_saffe_kotlin/" "motocred-api/" "go_saffe_flutter/" "credit-engine/" "go-saffe-react-native/" "go-saffe-capture/" "go-saffe-back/" "../" "go-saffe-console/" "auto-api/")
 
  ("/home/pedro/development/opengl-engine/Game/" (26571 40247 159704 842000) "./" "CMakeLists.txt" "src/" "assets/" "../")
 
@@ -157,10 +221,6 @@
 
  ("/home/" (26533 14663 115240 931000) "./" "pedro/" "../")
 
- ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/domain/" (26555 31822 791330 873000) "./" "workspace/" "issue/" "company/" "../" "user/")
-
- ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/" (26555 31822 790924 488000) "domain/" "./" "infrastructure/" "ItsmApiApplication.kt" "utils/" "../" "inbounds/" "application/")
-
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/" (26534 28820 237350 598000) "./" "itsm_api/" "../")
 
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/" (26534 28820 237350 598000) "modti/" "./" "../")
@@ -172,8 +232,6 @@
  ("/home/pedro/development/itsm-api/src/main/" (26534 28820 237905 281000) "./" "kotlin/" "../" "resources/")
 
  ("/home/pedro/development/itsm-api/src/" (26534 28820 237960 150000) "main/" "./" "test/" "../")
-
- ("/home/pedro/development/itsm-api/" (26555 36653 466720 876000) "./" "build/" ".kotlin/" "build.gradle.kts" ".gitattributes" ".gitignore" ".gradle/" "gradlew" "settings.gradle.kts" "src/" "docker-compose.yml" "gradlew.bat" "../" "gradle/" "kls_database.db" ".git/")
 
  ("/home/pedro/development/opengl-engine/build/" (26556 43244 752576 900000) "CMakeFiles/" "./" "Game/" "Makefile" "compile_commands.json" "CMakeCache.txt" "Engine/" "bin" "../" "cmake_install.cmake")
 

@@ -3,10 +3,10 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-(set-frame-font "BlexMono Nerd Font 20" nil t)
+(set-frame-font "FiraMono Nerd Font 20" nil t)
 
 ;; Diretório padrão
-(setq default-directory "d:/Development")
+;;(setq default-directory "d:/Development")
 
 ;; Backups e avisos
 (setq make-backup-files nil)
@@ -123,9 +123,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(evil-collection general json-mode kotlin-mode lsp-ui magit
-		     reformatter treesit-auto typescript-mode)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
