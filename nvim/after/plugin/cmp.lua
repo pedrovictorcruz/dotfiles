@@ -4,7 +4,7 @@ local lspkind = require("lspkind")
 local options = {
 	completion = {
 		completeopt = "menu,menuone,noinsert",
-		autocomplete = { cmp.TriggerEvent.TextChanged },
+		autocomplete = { "TextChanged", "InsertEnter" },
 	},
 	snippet = {
 		expand = function(args)

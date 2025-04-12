@@ -12,7 +12,7 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "IosevkaTerm Nerd Font Mono"
+family = "IosevkaTerm Nerd Font"
 
 [font]
 builtin_box_drawing = true
@@ -20,7 +20,7 @@ size = 23
 
 [font.offset]
 x = 1
-y = 4
+y = 8
 
 [scrolling]
 history = 100000
