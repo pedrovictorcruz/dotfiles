@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -178,6 +178,12 @@ exec --no-startup-id xrandr --output DP-0 --mode 2560x1440 --rate 169.83
 
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
+
+exec --no-startup-id xinput set-prop 11 "libinput Accel Profile Enabled" 0 1
+exec --no-startup-id xinput set-prop 11 "libinput Accel Speed" 0
+
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
 
 bar {
         status_command i3status

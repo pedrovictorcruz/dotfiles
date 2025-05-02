@@ -32,10 +32,11 @@ lspconfig.tailwindcss.setup({
 })
 lspconfig.pyright.setup({})
 lspconfig.clangd.setup({
-	cmd = { "clangd", "--background-index", "--clang-tidy", "--header-insertion=never" },
+	cmd = { "clangd", "--background-index", "--clang-tidy", "--header-insertion=iwyu" },
 	filetypes = { "c", "cpp", "objc", "objcpp" },
 	root_dir = lspconfig.util.root_pattern("compile_commands.json", ".git"),
 })
+lspconfig.zls.setup({})
 
 -- Keymaps
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { noremap = true, silent = true })

@@ -8,8 +8,8 @@ vim.diagnostic.config({
 	virtual_text = false,
 })
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.nu = false
+vim.opt.relativenumber = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

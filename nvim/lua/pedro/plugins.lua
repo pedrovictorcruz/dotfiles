@@ -3,6 +3,10 @@ return {
 		"rose-pine/neovim",
 		name = "rose-pine",
 	},
+	{
+		"CosecSecCot/cosec-twilight.nvim",
+		dependencies = "rktjmp/lush.nvim",
+	},
 	{ "neovim/nvim-lspconfig" },
 	{ "williamboman/mason.nvim" },
 	{

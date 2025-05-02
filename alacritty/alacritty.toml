@@ -12,11 +12,11 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "IosevkaTerm Nerd Font"
+family = "Comic Code"
 
 [font]
 builtin_box_drawing = true
-size = 23
+size = 18
 
 [font.offset]
 x = 1
@@ -25,11 +25,6 @@ y = 8
 [scrolling]
 history = 100000
 multiplier = 4
-
-[window]
-dimensions = { columns = 90, lines = 30 }
-decorations = "Full"
-decorations_theme_variant = "Dark"
 
 [keyboard]
 bindings = [
