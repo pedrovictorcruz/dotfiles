@@ -1,8 +1,8 @@
 [env]
 term="xterm-256color"
 
-[terminal.shell]
-program = "tmux"
+# [terminal.shell]
+# program = "tmux"
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -32,3 +32,5 @@ bindings = [
 { key = "L", mods = "Control|Shift", chars = "l" },
 ]
 
+[window]
+option_as_alt = "Both"

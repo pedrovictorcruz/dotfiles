@@ -43,7 +43,12 @@ return {
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
 		lazy = false,
 	},
-	{ "zbirenbaum/copilot.lua" },
+	{
+		"zbirenbaum/copilot.lua",
+		cmd = "Copilot",
+		build = ":Copilot auth",
+		event = "InsertEnter"
+	},
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {

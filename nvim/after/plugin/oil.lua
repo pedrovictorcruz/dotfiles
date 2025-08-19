@@ -1,7 +1,7 @@
 local oil = require("oil")
 
 oil.setup({
-	columns = { "icon" }, -- Mostra ícones de arquivos (requer nvim-web-devicons)
+	columns = { "" }, -- Mostra ícones de arquivos (requer nvim-web-devicons)
 	keymaps = {
 		["<CR>"] = "actions.select", -- Abrir arquivo/diretório
 		["-"] = "actions.parent", -- Voltar para o diretório anterior
