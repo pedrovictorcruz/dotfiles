@@ -10,7 +10,7 @@ set scrolloff=8
 
 set shortmess+=I
 
-set nu
+set number
 set relativenumber
 set belloff=all
 set showcmd
@@ -20,10 +20,8 @@ set nobackup
 set nowritebackup
 
 set clipboard=unnamed
-set guifont=RobotoMono\ Nerd\ Font:h22
+set guifont=Berkeley\ Mono:h22
 
 syntax enable
 
 highlight Normal guibg=black guifg=white
-set background=dark
-

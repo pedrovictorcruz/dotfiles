@@ -3,7 +3,7 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-(set-frame-font "FiraMono Nerd Font 20" nil t)
+(set-frame-font "Berkeley Mono 24" nil t)
 
 ;; Diretório padrão
 ;;(setq default-directory "d:/Development")
@@ -39,37 +39,6 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-(setq evil-want-keybinding nil)
-(setq evil-want-C-u-scroll t)
-
-;; Evil
-(use-package evil
-  :config
-  (evil-mode 1))
-
-(use-package evil-collection
-  :after evil
-  :config
-  (evil-collection-init))
-
-;; General for leader key
-(use-package general
-  :config
-  (general-create-definer my/leader
-    :states '(normal visual)
-    :prefix "SPC"
-    :global-prefix "C-SPC")
-
-  (my/leader
-    "f"  '(:ignore t :which-key "files")
-    "f d" 'find-file
-    "f f" 'formatting-buffer
-    "b"  'switch-to-buffer
-    "k"  'kill-buffer
-    "g"  '(:ignore t :which-key "git")
-    "g s" 'magit-status
-    "q"  'save-buffers-kill-terminal))
-
 ;; IDO mode
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
@@ -92,9 +61,6 @@
 ;; Auto-refresh dired on file change
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
-;; Reformatter (formatting.el usa isso)
-(use-package reformatter)
-
 ;; Tree-sitter
 (use-package treesit-auto
   :config
@@ -112,11 +78,7 @@
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
-(define-key key-translation-map (kbd "C-c") (kbd "<escape>"))
-(define-key evil-normal-state-map (kbd "C-r") 'evil-redo)
-
-;; Formatting custom
-(require 'formatting)
+(define-key key-translation-map (kbd "C-c") (kbd "C-g"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

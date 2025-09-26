@@ -1,12 +1,4 @@
 return {
-	{
-		"rose-pine/neovim",
-		name = "rose-pine",
-	},
-	{
-		"CosecSecCot/cosec-twilight.nvim",
-		dependencies = "rktjmp/lush.nvim",
-	},
 	{ "neovim/nvim-lspconfig" },
 	{ "williamboman/mason.nvim" },
 	{
@@ -14,10 +6,6 @@ return {
 		dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
 	},
 	{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
-	{
-		"stevearc/conform.nvim",
-		opts = {},
-	},
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
 	{
@@ -42,12 +30,6 @@ return {
 		opts = {},
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
 		lazy = false,
-	},
-	{
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		build = ":Copilot auth",
-		event = "InsertEnter"
 	},
 	{
 		"nvim-telescope/telescope.nvim",

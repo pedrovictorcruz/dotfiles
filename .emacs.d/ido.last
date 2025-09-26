@@ -2,6 +2,13 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/pedrocruz/Developer/dotfiles/.emacs.d/" . "modes/")
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/" . "scr/")
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/" . "engines/")
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/" . "infrastructure/")
+ ("/Users/pedrocruz/workspace/credit-engine-api/" . "src/")
+ ("/Users/pedrocruz/workspace/" . "credit-engine-api/")
+ ("/Users/pedrocruz/" . "workspace/")
  ("/home/pedro/development/work/go-saffe-capture/src/" . "helpers/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/services/" . "user/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/" . "services/")
@@ -52,6 +59,13 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/altis-scr/"
+ "/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/"
+ "/Users/pedrocruz/workspace/credit-engine-api/"
+ "/Users/pedrocruz/Developer/dotfiles/.emacs.d/"
+ "/Users/pedrocruz/Developer/dotfiles/.emacs.d/modes/"
+ "/Users/pedrocruz/.emacs.d/"
+ "/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/scr/"
  "/home/pedro/.emacs.d/"
  "/home/pedro/development/work/go-saffe-capture/src/enums/"
  "/home/pedro/development/work/go-saffe-capture/src/controllers/"
@@ -87,20 +101,52 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "altis-scr.module.ts"
  "init.el"
+ "typescript-mode.el"
+ "consult-scr.service.ts"
  "transaction-type.enum.ts"
  "transaction.controller.ts"
  "CHANGELOG.md"
  "RegisterUserService.kt"
  "build.gradle.kts"
  "IssueAttachmentService.kt"
- "EntryPoint.cs"
- "index.md"
- "simulate.service.ts"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/altis-scr/" (26829 39190 798420 430000) "altis-scr.module.ts" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/scr/" (26829 25841 294341 312000) "interfaces/" "consult-scr.service.ts" "scr.config.ts" "scr.module.ts" "mock/" "../" "./")
+
+ ("/Users/pedrocruz/.emacs.d/" (26829 37834 121142 539000) "themes/" "elpa/" ".gitignore" "init.el" "auto-save-list/" "transient/" "modes/" "lisp/" "ido.last" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine-api/" (26829 28748 301418 693000) "src/" "jest.config.ts" ".env.development" "collections/" "biome.json" ".vscode/" ".git/" "docker-compose.yml" "tsconfig.json" ".github/" ".nvmrc" ".env" "tsconfig.build.json" "package.json" "package-lock.json" ".gitignore" "newrelic_agent.log" "logs/" "yarn.lock" "Dockerfile.dev" "README.md" ".npmrc" "ormconfig.ts" "node_modules/" "nest-cli.json" "buildspec.yml" "dist/" "test/" "Dockerfile.prod" ".env.production" "../" "./")
+
+ ("/Users/pedrocruz/Developer/" (26816 6080 886247 280000) "obsidian-vaults/" "itsm-front/" "work/" "notes/" "flutter/" "vulkan-engine/" "itsm-api/" "MyProject/" "zombie-mp/" "dotfiles/" "tmux-sessionizer/" ".DS_Store" "opengl-engine/" "../" "./")
+
+ ("/Users/pedrocruz/Developer/dotfiles/" (26700 4499 673983 936000) "ghostty/" "git/" ".git/" "i3/" "i3status/" "tmux/" ".emacs.d/" "wezterm/" ".zshrc" "nvim/" ".vim/" "alacritty/" "../" "./")
+
+ ("/Users/pedrocruz/Developer/dotfiles/.emacs.d/" (26829 37834 121142 539000) "themes/" "elpa/" ".gitignore" "init.el" "auto-save-list/" "transient/" "modes/" "lisp/" "ido.last" "../" "./")
+
+ ("/Users/pedrocruz/Developer/dotfiles/.emacs.d/modes/" (26586 2602 241333 785000) "kotlin-mode-lexer.el" "simpc-mode.el" "kotlin-mode-indent.el" "tsx-mode.el" "kotlin-mode.el" "typescript-mode.el" "../" "./")
+
+ ("/Users/pedrocruz/Developer/dotfiles/.emacs.d/lisp/" (26586 2602 240753 577000) "formatting.el" "../" "./")
+
+ ("/Users/pedrocruz/" (26829 37482 407897 991000) ".zcompdump-pedro-5.9" ".zsh_sessions/" ".viminfo" ".gitconfig" ".aws/" ".cache/" "tmp/" "Downloads/" ".oh-my-zsh/" ".swiftpm/" ".gem/" ".bash_profile" ".m2/" ".vscode/" ".claude.json" ".tmux/" ".pyenv/" ".zcompdump-Pedros-MacBook-Pro-5.9.zwc" "Documents/" ".terraform.d/" ".npm/" ".epic/" ".zcompdump" ".jupyter/" ".zcompdump.pedro.local.4401" ".zcompdump-Pedros-MacBook-Pro-5.9" ".Trash/" "UnrealEngine/" ".gradle/" "Applications/" "Movies/" ".ssh/" ".dart-tool/" ".amplify/" ".zen/" ".flutter" "Public/" ".codex/" "DataGripProjects/" ".cocoapods/" ".android/" ".emacs.d/" ".emulator_console_auth_token" ".lesshst" ".sdkman/" ".npmrc" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".biome/" ".claude/" ".colima/" ".nuget/" "Postman/" ".pub-cache/" ".zcompdump-Pedro’s MacBook Pro-5.9" ".nvm/" ".dartServer/" ".zprofile" "My project/" "workspace/" "Pictures/" ".local/" ".zshrc" ".zshrc.pre-oh-my-zsh" ".netrc" ".rbenv/" ".hawtjni/" ".zcompdump-pedro-5.9.zwc" ".zprofile.bak" ".z" ".CFUserTextEncoding" ".yarnrc" ".tmux.conf" ".plastic4/" ".gnupg/" ".DS_Store" ".vim/" ".codeium/" ".windsurf/" ".gemini/" ".docker/" ".skiko/" "Developer/" ".yarn/" ".cursor/" "Music/" ".config/" ".claude.json.backup" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/scr/./" (26829 25211 649991 514000) "interfaces/" "#consult-scr.service.ts#" "consult-scr.service.ts" "scr.config.ts" "scr.module.ts" "mock/" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/" (26807 16048 578809 646000) "engine.enum.ts" "serasa/" "engine.module.ts" "xml-boavista/" "kavak-boavista/" "engine.factory.ts" "motocred/" "engine.abstract.ts" "scr/" "boavista/" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/" (26594 7494 340546 104000) "engines/" "http/" "adapters/" "database/" "middleware/" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine-api/src/" (26774 5241 234568 938000) "domain/" "infrastructure/" "app.module.ts" "utils/" "health/" "config/" "main.ts" "../" "./")
+
+ ("/Users/pedrocruz/workspace/credit-engine/" (26827 63899 175195 934000) "src/" "postcss.config.js" "biome.json" ".vscode/" ".git/" "vite.config.ts" ".env.example" "tsconfig.json" "components.json" ".github/" ".nvmrc" ".env" "package.json" "package-lock.json" ".gitignore" "public/" "README.md" "node_modules/" "dist/" "tailwind.config.js" "index.html" "types/" "tsconfig.node.json" ".husky/" "../" "./")
+
+ ("/Users/pedrocruz/workspace/" (26816 25926 907676 46000) "my-react-router-app/" "credit-engine/" "collections/" "aws-rekognition/" "go-saffe-swift/" "build/" "my-react-router-app.zip" "contracts-api/" "go_saffe_flutter/" "personal-loans-backoffice/" "fgts-api/" "go-saffe-console/" "tensorflow-sandbox-api/" "altis-backoffice/" "tensorflow-sandbox/" "go-saffe-capture/" "ccb-api/" "go-saffe-react-js/" "backoffice-api/" "go-saffe-swift-example/" "credit-engine-api/" "go-saffe-back/" "go-saffe-react-native/" "auto/" "devtools-check/" "go_saffe_flutter_example/" "auto-api/" "personal-loans-api/" ".DS_Store" "charge-api/" "go_saffe_kotlin/" "fgts-backoffice/" "terraform-projects/" "../" "./")
+
  ("/home/pedro/.emacs.d/" (26613 12771 352242 205000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "tree-sitter/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
 
  ("/home/pedro/" (26613 12449 218 948000) ".var/" "DataGripProjects/" ".gitconfig" ".npm/" ".bash_history" "Pictures/" "./" "tmp/" ".bash_logout" ".emacs.d/" "vimfiles/" ".plastic4/" ".nuget/" ".pki/" ".vimrc" ".bash_profile" "Unity/" ".inputrc" "Videos/" ".omnisharp/" ".android/" ".windsurf/" ".pulse-cookie" ".steam/" "development/" "Postman/" ".emulator_console_auth_token" "regulaforensics.txt" ".mysql/" ".cargo/" ".XCompose" ".flutter" ".config/" ".yarnrc" ".vscode/" "Desktop/" ".nv/" ".dartServer/" ".gradle/" "Templates/" ".cache/" ".sdirs" ".bashrc" ".claude.json" ".mozilla/" ".claude/" ".renderdoc/" ".oh-my-bash/" "todo.md" ".gnupg/" ".osh-update" "Downloads/" "Android/" ".pyenv/" ".cursor/" "go/" ".steampath" ".ServiceHub/" ".nvm/" ".1password/" ".python_history" ".vim/" ".epic/" ".local/" ".awt/" ".steampid" ".npmrc" ".sdkman/" ".java/" ".dotnet/" "../" ".pub-cache/" ".ssh/" ".tmux/" ".tmux.conf" "Documents/" "Library/" "Music/" ".dart-tool/" ".codeium/" ".bashrc.omb-backup-20250207010409" ".electron-gyp/" ".viminfo" ".yarn/" "Public/")

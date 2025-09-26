@@ -12,7 +12,7 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "Comic Code"
+family = "Berkeley Mono"
 
 [font]
 builtin_box_drawing = true
