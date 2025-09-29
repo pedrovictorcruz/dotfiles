@@ -1,5 +1,6 @@
 local cmp = require("cmp")
 local lspkind = require("lspkind")
+require("copilot_cmp").setup()
 
 local options = {
 	completion = {
@@ -36,6 +37,7 @@ local options = {
 		["<CR>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
 	},
 	sources = {
+		{ name = "copilot", group_index = 2 },
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
 		{ name = "nvim_lua" },

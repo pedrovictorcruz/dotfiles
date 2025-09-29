@@ -20,8 +20,20 @@ return {
 				"L3MON4D3/LuaSnip",
 				"saadparwaiz1/cmp_luasnip",
 				"onsails/lspkind.nvim",
+				"zbirenbaum/copilot-cmp",
 			},
 		},
+	},
+	{
+		"zbirenbaum/copilot.lua",
+		cmd = "Copilot",
+		event = "InsertEnter",
+		config = function()
+			require("copilot").setup({
+				suggestion = { enabled = false },
+				panel = { enabled = false },
+			})
+		end,
 	},
 	{
 		"stevearc/oil.nvim",
@@ -43,5 +55,9 @@ return {
 				end,
 			},
 		},
+	},
+	{
+		"stevearc/conform.nvim",
+		opts = {},
 	},
 }
