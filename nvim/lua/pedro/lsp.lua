@@ -4,6 +4,7 @@ vim.lsp.enable({
 	"tailwindcss",
 	"html",
 	"jsonls",
+    "pyright",
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
