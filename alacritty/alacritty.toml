@@ -1,9 +1,6 @@
 [env]
 term="xterm-256color"
 
-# [terminal.shell]
-# program = "tmux"
-
 [colors]
 draw_bold_text_with_bright_colors = true
 
@@ -12,11 +9,12 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "Berkeley Mono"
+family = "IosevkaTerm Nerd Font"
+style = "Regular"
 
 [font]
 builtin_box_drawing = true
-size = 18
+size = 26
 
 [font.offset]
 x = 1
