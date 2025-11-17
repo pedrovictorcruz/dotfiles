@@ -6,6 +6,7 @@ vim.lsp.enable({
 	"jsonls",
     "pyright",
     "kotlin",
+    "clang",
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
