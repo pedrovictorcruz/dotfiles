@@ -5,6 +5,7 @@ vim.lsp.enable({
 	"html",
 	"jsonls",
     "pyright",
+    "kotlin",
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
