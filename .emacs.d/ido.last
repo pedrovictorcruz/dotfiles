@@ -2,13 +2,17 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/pedrocruz/development/dotfiles/.emacs.d/" . "modes/")
+ ("/Users/pedrocruz/workspace/go-saffe-capture/src/" . "controllers/")
+ ("/Users/pedrocruz/workspace/go-saffe-capture/" . "src/")
+ ("/Users/" . "pedrocruz/")
  ("/Users/pedrocruz/Developer/dotfiles/.emacs.d/" . "modes/")
  ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/" . "scr/")
  ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/" . "engines/")
  ("/Users/pedrocruz/workspace/credit-engine-api/src/" . "infrastructure/")
  ("/Users/pedrocruz/workspace/credit-engine-api/" . "src/")
- ("/Users/pedrocruz/workspace/" . "credit-engine-api/")
- ("/Users/pedrocruz/" . "workspace/")
+ ("/Users/pedrocruz/workspace/" . "go-saffe-capture/")
+ ("/Users/pedrocruz/" . ".emacs.d/")
  ("/home/pedro/development/work/go-saffe-capture/src/" . "helpers/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/services/" . "user/")
  ("/home/pedro/development/itsm-api/src/main/kotlin/br/com/modti/itsm_api/application/" . "services/")
@@ -20,7 +24,7 @@
  ("/home/pedro/development/work/fgts-backoffice/src/" . "pages/")
  ("/home/pedro/development/work/fgts-backoffice/" . "src/")
  ("/home/pedro/development/work/fgts-api/" . "src/")
- ("/" . "home/")
+ ("/" . "System/")
  ("/home/pedro/development/Zombie/Assets/" . "Scripts/")
  ("/home/pedro/development/Zombie/" . "Assets/")
  ("/home/pedro/development/dotfiles/" . ".emacs.d/")
@@ -59,12 +63,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/pedrocruz/.emacs.d/"
+ "/Users/pedrocruz/workspace/go-saffe-capture/src/controllers/"
+ "/Users/pedrocruz/workspace/charge-api/"
  "/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/altis-scr/"
  "/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/"
  "/Users/pedrocruz/workspace/credit-engine-api/"
  "/Users/pedrocruz/Developer/dotfiles/.emacs.d/"
  "/Users/pedrocruz/Developer/dotfiles/.emacs.d/modes/"
- "/Users/pedrocruz/.emacs.d/"
  "/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/scr/"
  "/home/pedro/.emacs.d/"
  "/home/pedro/development/work/go-saffe-capture/src/enums/"
@@ -101,25 +107,53 @@
 
 ;; ----- ido-work-file-list -----
 (
- "altis-scr.module.ts"
  "init.el"
+ "transaction.controller.ts"
+ "Dockerfile"
+ "altis-scr.module.ts"
  "typescript-mode.el"
  "consult-scr.service.ts"
  "transaction-type.enum.ts"
- "transaction.controller.ts"
  "CHANGELOG.md"
  "RegisterUserService.kt"
  "build.gradle.kts"
- "IssueAttachmentService.kt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/pedrocruz/development/dotfiles/.emacs.d/modes/" (26586 2602 241333 785000) "kotlin-mode-lexer.el" "simpc-mode.el" "kotlin-mode-indent.el" "tsx-mode.el" "kotlin-mode.el" "typescript-mode.el" "../" "./")
+
+ ("/Users/pedrocruz/development/dotfiles/.emacs.d/" (26907 17905 452339 271000) "themes/" "elpa/" "init.el.bak" ".gitignore" "init.el" "auto-save-list/" "transient/" "modes/" "lisp/" "ido.last" "../" "./")
+
+ ("/Users/pedrocruz/.emacs.d/" (26907 14220 645143 468000) "themes/" "elpa/" "init.el.bak" ".gitignore" "init.el" "auto-save-list/" "transient/" "modes/" "lisp/" "ido.last" "../" "./")
+
+ ("/Users/pedrocruz/workspace/go-saffe-capture/src/controllers/" (26899 31615 910431 812000) "transaction.controller.ts" "../" "./")
+
+ ("/Users/pedrocruz/workspace/go-saffe-capture/src/" (26899 33432 377193 846000) "helpers/" "flows/" "assets/" "controllers/" "index.ts" "api/" "index_iframe.html" "screens/" "models/" "locales/" "index.html" "types/" "../" "./")
+
+ ("/Users/pedrocruz/workspace/go-saffe-capture/" (26903 25272 160416 536000) "src/" ".cache/" ".env.development" "biome.json" ".git/" "tsconfig.json" ".nvmrc" ".env" ".parcelrc" "package.json" ".gitignore" "yarn.lock" "README.md" ".gitmodules" "node_modules/" "dist/" "CHANGELOG.md" "yarn-error.log" ".env.production" ".babelrc" "../" "./")
+
+ ("/Users/pedrocruz/" (26907 17545 884758 953000) ".zcompdump-pedro-5.9" ".zsh_sessions/" ".viminfo" ".bash_history" ".gitconfig" ".aws/" ".cache/" "tmp/" ".python_history" "Downloads/" ".oh-my-zsh/" ".swiftpm/" ".gem/" ".bash_profile" ".m2/" ".vscode/" ".claude.json" ".tmux/" ".pyenv/" ".zcompdump-Pedros-MacBook-Pro-5.9.zwc" "Documents/" ".terraform.d/" ".npm/" ".epic/" ".zcompdump" ".jupyter/" ".zcompdump.pedro.local.4401" ".zcompdump-Pedros-MacBook-Pro-5.9" ".Trash/" ".gradle/" "Applications/" ".vimrc" "Movies/" ".ssh/" ".dart-tool/" ".amplify/" ".zen/" ".flutter" "Public/" ".codex/" "DataGripProjects/" ".cocoapods/" ".android/" ".zcompdump.pedro.local.6654" ".emacs.d/" ".emulator_console_auth_token" ".lesshst" ".sdkman/" ".matplotlib/" ".npmrc" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".biome/" ".claude/" ".colima/" ".nuget/" "Postman/" ".pub-cache/" ".zcompdump-Pedro’s MacBook Pro-5.9" ".nvm/" ".dartServer/" ".zprofile" "My project/" "workspace/" "Pictures/" ".local/" ".zshrc" "development/" ".zshrc.pre-oh-my-zsh" ".bashrc" ".netrc" ".rbenv/" ".hawtjni/" ".zcompdump-pedro-5.9.zwc" ".zprofile.bak" ".z" ".CFUserTextEncoding" ".yarnrc" ".lldb/" ".tmux.conf" ".plastic4/" ".gnupg/" ".DS_Store" ".vim/" ".codeium/" ".windsurf/" ".gemini/" ".copilot/" ".docker/" ".skiko/" ".yarn/" ".cursor/" "Music/" ".junie/" ".config/" ".claude.json.backup" "../" "./")
+
+ ("/Users/" (26897 64662 123917 30000) "pedrocruz/" "Shared/" ".localized" "../" "./")
+
+ ("/Users/pedrocruz/workspace/charge-api/" (26907 13972 458105 371000) "src/" ".idea/" "volume/" "collections/" "gradlew.bat" ".git/" "build/" "docker-compose.yml" "settings.gradle.kts" ".gradle/" ".gitattributes" ".github/" "build.gradle.kts" ".gitignore" "logs/" "gradlew" "gradle/" "README.md" "Dockerfile" "../" "./")
+
+ ("/Users/pedrocruz/workspace/" (26875 54490 521870 881000) "my-react-router-app/" "credit-engine/" "collections/" "aws-rekognition/" "go-saffe-swift/" "build/" "contracts-api/" "go_saffe_flutter/" "wasm-example/" "personal-loans-backoffice/" "fgts-api/" "go-saffe-console/" "tensorflow-sandbox-api/" "altis-backoffice/" "tensorflow-sandbox/" "go-saffe-capture/" "ccb-api/" "go-saffe-react-js/" "backoffice-api/" "go-saffe-swift-example/" "credit-engine-api/" "go-saffe-back/" "go-saffe-react-native/" "auto/" "devtools-check/" "go_saffe_flutter_example/" "auto-api/" "personal-loans-api/" ".DS_Store" "saffe-capture-sdk/" "charge-api/" "go_saffe_kotlin/" "fgts-backoffice/" "terraform-projects/" "../" "./")
+
+ ("/System/" (26881 27648 0 0) "DriverKit/" "Volumes/" "Applications/" "Cryptexes/" "Library/" "iOSSupport/" ".localized" "Developer/" "../" "./")
+
+ ("/Applications/" (26907 7507 630267 605000) "Discord.app/" "Slack.app/" "SpotMenu.app/" "CLion.app/" "Postman.app/" "DataGrip.app/" "Alacritty.app/" "Emacs.app/" "Bruno.app/" "Android Studio.app/" "CleanMyKeyboard.app/" "IntelliJ IDEA CE.app/" "Things3.app/" "MySQLWorkbench.app/" ".Karabiner-VirtualHIDDevice-Manager.app/" "1Password for Safari.app/" "GitHub Desktop.app/" "WhatsApp.app/" "Utilities/" "AdBlock.app/" "Safari.app/" "Obsidian.app/" "Docker.app/" "Spotify.app/" "Xcode.app/" ".localized" "Karabiner-EventViewer.app/" "Karabiner-Elements.app/" "Google Chrome.app/" "BetterDisplay.app/" ".DS_Store" "1Password.app/" "Visual Studio Code.app/" "../" "./")
+
+ ("/Applications/Emacs.app/" (26782 20576 0 0) "Contents/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/" (26782 21289 0 0) "PkgInfo" "Info.plist" "Resources/" "MacOS/" "_CodeSignature/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/MacOS/" (26782 21289 0 0) "libexec-x86_64-10_14/" "launch.rs" "libexec-x86_64-10_12/" "libexec-arm64-11/" "lib-arm64-11/" "Emacs-x86_64-10_12" "Emacs-x86_64-10_14" "Emacs-arm64-11.pdmp" "Emacs" "emacs-nw" "bin-x86_64-10_12/" "Emacs-x86_64-10_14.pdmp" "bin-x86_64-10_14/" "libexec/" "bin-arm64-11/" "lib-x86_64-10_14/" "bin/" "lib-x86_64-10_12/" "Emacs-x86_64-10_12.pdmp" "Emacs-arm64-11" "../" "./")
+
  ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/altis-scr/" (26829 39190 798420 430000) "altis-scr.module.ts" "../" "./")
 
  ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/scr/" (26829 25841 294341 312000) "interfaces/" "consult-scr.service.ts" "scr.config.ts" "scr.module.ts" "mock/" "../" "./")
-
- ("/Users/pedrocruz/.emacs.d/" (26829 37834 121142 539000) "themes/" "elpa/" ".gitignore" "init.el" "auto-save-list/" "transient/" "modes/" "lisp/" "ido.last" "../" "./")
 
  ("/Users/pedrocruz/workspace/credit-engine-api/" (26829 28748 301418 693000) "src/" "jest.config.ts" ".env.development" "collections/" "biome.json" ".vscode/" ".git/" "docker-compose.yml" "tsconfig.json" ".github/" ".nvmrc" ".env" "tsconfig.build.json" "package.json" "package-lock.json" ".gitignore" "newrelic_agent.log" "logs/" "yarn.lock" "Dockerfile.dev" "README.md" ".npmrc" "ormconfig.ts" "node_modules/" "nest-cli.json" "buildspec.yml" "dist/" "test/" "Dockerfile.prod" ".env.production" "../" "./")
 
@@ -133,8 +167,6 @@
 
  ("/Users/pedrocruz/Developer/dotfiles/.emacs.d/lisp/" (26586 2602 240753 577000) "formatting.el" "../" "./")
 
- ("/Users/pedrocruz/" (26829 37482 407897 991000) ".zcompdump-pedro-5.9" ".zsh_sessions/" ".viminfo" ".gitconfig" ".aws/" ".cache/" "tmp/" "Downloads/" ".oh-my-zsh/" ".swiftpm/" ".gem/" ".bash_profile" ".m2/" ".vscode/" ".claude.json" ".tmux/" ".pyenv/" ".zcompdump-Pedros-MacBook-Pro-5.9.zwc" "Documents/" ".terraform.d/" ".npm/" ".epic/" ".zcompdump" ".jupyter/" ".zcompdump.pedro.local.4401" ".zcompdump-Pedros-MacBook-Pro-5.9" ".Trash/" "UnrealEngine/" ".gradle/" "Applications/" "Movies/" ".ssh/" ".dart-tool/" ".amplify/" ".zen/" ".flutter" "Public/" ".codex/" "DataGripProjects/" ".cocoapods/" ".android/" ".emacs.d/" ".emulator_console_auth_token" ".lesshst" ".sdkman/" ".npmrc" "Library/" "Desktop/" ".ipython/" ".zsh_history" ".biome/" ".claude/" ".colima/" ".nuget/" "Postman/" ".pub-cache/" ".zcompdump-Pedro’s MacBook Pro-5.9" ".nvm/" ".dartServer/" ".zprofile" "My project/" "workspace/" "Pictures/" ".local/" ".zshrc" ".zshrc.pre-oh-my-zsh" ".netrc" ".rbenv/" ".hawtjni/" ".zcompdump-pedro-5.9.zwc" ".zprofile.bak" ".z" ".CFUserTextEncoding" ".yarnrc" ".tmux.conf" ".plastic4/" ".gnupg/" ".DS_Store" ".vim/" ".codeium/" ".windsurf/" ".gemini/" ".docker/" ".skiko/" "Developer/" ".yarn/" ".cursor/" "Music/" ".config/" ".claude.json.backup" "../" "./")
-
  ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/scr/./" (26829 25211 649991 514000) "interfaces/" "#consult-scr.service.ts#" "consult-scr.service.ts" "scr.config.ts" "scr.module.ts" "mock/" "../" "./")
 
  ("/Users/pedrocruz/workspace/credit-engine-api/src/infrastructure/engines/" (26807 16048 578809 646000) "engine.enum.ts" "serasa/" "engine.module.ts" "xml-boavista/" "kavak-boavista/" "engine.factory.ts" "motocred/" "engine.abstract.ts" "scr/" "boavista/" "../" "./")
@@ -144,8 +176,6 @@
  ("/Users/pedrocruz/workspace/credit-engine-api/src/" (26774 5241 234568 938000) "domain/" "infrastructure/" "app.module.ts" "utils/" "health/" "config/" "main.ts" "../" "./")
 
  ("/Users/pedrocruz/workspace/credit-engine/" (26827 63899 175195 934000) "src/" "postcss.config.js" "biome.json" ".vscode/" ".git/" "vite.config.ts" ".env.example" "tsconfig.json" "components.json" ".github/" ".nvmrc" ".env" "package.json" "package-lock.json" ".gitignore" "public/" "README.md" "node_modules/" "dist/" "tailwind.config.js" "index.html" "types/" "tsconfig.node.json" ".husky/" "../" "./")
-
- ("/Users/pedrocruz/workspace/" (26816 25926 907676 46000) "my-react-router-app/" "credit-engine/" "collections/" "aws-rekognition/" "go-saffe-swift/" "build/" "my-react-router-app.zip" "contracts-api/" "go_saffe_flutter/" "personal-loans-backoffice/" "fgts-api/" "go-saffe-console/" "tensorflow-sandbox-api/" "altis-backoffice/" "tensorflow-sandbox/" "go-saffe-capture/" "ccb-api/" "go-saffe-react-js/" "backoffice-api/" "go-saffe-swift-example/" "credit-engine-api/" "go-saffe-back/" "go-saffe-react-native/" "auto/" "devtools-check/" "go_saffe_flutter_example/" "auto-api/" "personal-loans-api/" ".DS_Store" "charge-api/" "go_saffe_kotlin/" "fgts-backoffice/" "terraform-projects/" "../" "./")
 
  ("/home/pedro/.emacs.d/" (26613 12771 352242 205000) "lisp/" "./" "elpa/" ".gitignore" "modes/" "transient/" "tree-sitter/" "ido.last" "init.el" "auto-save-list/" "../" "themes/")
 
@@ -290,8 +320,6 @@
  ("/home/pedro/development/work/credit-engine-api/src/domain/" (26548 48905 774538 205000) "./" "simulation/" "engine/" "externalSimulation/" "invite/" "consult/" "store/" "company/" "../" "policy/" "user/")
 
  ("/home/pedro/development/work/credit-engine-api/src/" (26548 48905 772979 482000) "domain/" "./" "infrastructure/" "config/" "app.module.ts" "main.ts" "health/" "utils/" "../")
-
- ("/home/pedro/Desktop/" (26553 56018 871413 416000) "./" "steam.desktop" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----

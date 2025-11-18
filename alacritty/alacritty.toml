@@ -14,7 +14,7 @@ style = "Regular"
 
 [font]
 builtin_box_drawing = true
-size = 26
+size = 22
 
 [font.offset]
 x = 1
