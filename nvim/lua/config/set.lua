@@ -42,3 +42,14 @@ vim.o.laststatus = 3
 vim.opt.wildmenu = true
 vim.opt.wildmode = { "longest:full", "full" }
 vim.opt.wildignore = { "*.o", "*.obj", "*.pyc", "*.class", "node_modules/*", ".git/*" }
+
+-- save the initial working directory
+local initial_cwd = vim.fn.getcwd()
+
+-- Set grep to always run from the initial dir
+vim.api.nvim_create_autocmd("QuickFixCmdPre", {
+  pattern = "grep",
+  callback = function()
+    vim.cmd("cd " .. initial_cwd)
+  end,
+})
