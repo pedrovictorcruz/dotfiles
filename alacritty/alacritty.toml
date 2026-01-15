@@ -9,8 +9,7 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "IosevkaTerm Nerd Font"
-style = "Regular"
+family = "Comic Code"
 
 [font]
 builtin_box_drawing = true
@@ -18,7 +17,7 @@ size = 22
 
 [font.offset]
 x = 1
-y = 8
+y = 1
 
 [scrolling]
 history = 100000
