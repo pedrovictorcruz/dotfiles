@@ -5,5 +5,5 @@ return {
 		"c",
         "cpp"
 	},
-	root_markers = { "compile_commands.json" },
+	root_markers = { "./build/compile_commands.json" },
 }

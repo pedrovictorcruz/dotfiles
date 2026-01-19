@@ -10,13 +10,12 @@ return {
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
 		lazy = false,
 	},
-    { 
-        "blazkowolf/gruber-darker.nvim", 
-        opts = {
-        bold = false,
-            italic = {
-              strings = false,
-            },
+    { "rose-pine/neovim", name = "rose-pine" },
+    {
+        'nvim-telescope/telescope.nvim',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
         }
     }
 }
