@@ -42,7 +42,7 @@
     followTags = true  # push also tags
 
 [pull]
-    rebase = true
+    rebase = false
 
 [submodule]
     fetchJobs = 16
