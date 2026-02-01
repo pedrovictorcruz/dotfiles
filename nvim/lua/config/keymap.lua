@@ -10,28 +10,15 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end)
 
-vim.api.nvim_create_autocmd("BufEnter", {
-  pattern = "*",
-  callback = function()
-    -- lcd to the directory of the current file
-    vim.cmd("silent! lcd " .. vim.fn.expand("%:p:h"))
-  end,
-})
-
-vim.api.nvim_create_autocmd("QuickFixCmdPost", {
-  pattern = "grep",
-  callback = function()
-    vim.cmd("copen")
-  end,
-})
-
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
-vim.api.nvim_create_autocmd("BufEnter", {
-	pattern = "fugitive://*",
-	callback = function()
-		vim.cmd("only")
-	end,
+vim.api.nvim_create_autocmd("BufWinEnter", {
+  pattern = "fugitive://*",
+  callback = function()
+    vim.schedule(function()
+      vim.cmd("only")
+    end)
+  end,
 })
 
 vim.keymap.set("n", "<A-c>", ":bd<CR>", { noremap = true, silent = true })

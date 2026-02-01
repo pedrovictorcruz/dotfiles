@@ -1,5 +1,9 @@
 return {
-	{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
+    { 
+        "nvim-treesitter/nvim-treesitter", 
+        lazy = false,
+        run = ":TSUpdate" 
+    },
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
 	{
@@ -12,10 +16,6 @@ return {
 	},
     { "rose-pine/neovim", name = "rose-pine" },
     {
-        'nvim-telescope/telescope.nvim',
-        dependencies = {
-            'nvim-lua/plenary.nvim',
-            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-        }
+        "comfysage/artio.nvim", lazy = false,
     }
 }
