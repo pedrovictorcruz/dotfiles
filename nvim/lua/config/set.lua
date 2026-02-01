@@ -36,6 +36,9 @@ vim.opt.updatetime = 50
 
 vim.opt.clipboard = "unnamedplus"
 
-require("vim._extui").enable({ enable = true, msg = {
-  target = "msg",
-} })
+require("vim._extui").enable({
+    enable = true, 
+    msg = {
+        target = "cmd",
+    },
+})
