@@ -31,14 +31,14 @@ require("artio").setup({
 -- override built-in ui select with artio
 vim.ui.select = require("artio").select
 
-vim.keymap.set("n", "<leader>fd", "<Plug>(artio-files)")
-vim.keymap.set("n", "<leader>fg", "<Plug>(artio-grep)")
-
--- smart file picker
-vim.keymap.set("n", "<leader>ff", "<Plug>(artio-smart)")
-
--- general built-in pickers
-vim.keymap.set("n", "<leader>fh", "<Plug>(artio-helptags)")
-vim.keymap.set("n", "<leader>fb", "<Plug>(artio-buffers)")
-vim.keymap.set("n", "<leader>f/", "<Plug>(artio-buffergrep)")
-vim.keymap.set("n", "<leader>fo", "<Plug>(artio-oldfiles)")
+-- vim.keymap.set("n", "<leader>fd", "<Plug>(artio-files)")
+-- vim.keymap.set("n", "<leader>fg", "<Plug>(artio-grep)")
+--
+-- -- smart file picker
+-- vim.keymap.set("n", "<leader>ff", "<Plug>(artio-smart)")
+--
+-- -- general built-in pickers
+-- vim.keymap.set("n", "<leader>fh", "<Plug>(artio-helptags)")
+-- vim.keymap.set("n", "<leader>fb", "<Plug>(artio-buffers)")
+-- vim.keymap.set("n", "<leader>f/", "<Plug>(artio-buffergrep)")
+-- vim.keymap.set("n", "<leader>fo", "<Plug>(artio-oldfiles)")

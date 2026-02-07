@@ -17,5 +17,20 @@ return {
     { "rose-pine/neovim", name = "rose-pine" },
     {
         "comfysage/artio.nvim", lazy = false,
+    },
+    {
+        'everviolet/nvim', name = 'evergarden',
+
+    },
+    {
+        'nvim-telescope/telescope.nvim', version = '*',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            -- optional but recommended
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+        }
+    },
+    {
+        'github/copilot.vim'
     }
 }
