@@ -14,23 +14,20 @@ return {
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
 		lazy = false,
 	},
-    { "rose-pine/neovim", name = "rose-pine" },
-    {
-        "comfysage/artio.nvim", lazy = false,
-    },
-    {
-        'everviolet/nvim', name = 'evergarden',
-
-    },
     {
         'nvim-telescope/telescope.nvim', version = '*',
         dependencies = {
             'nvim-lua/plenary.nvim',
-            -- optional but recommended
             { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
         }
     },
     {
-        'github/copilot.vim'
+        'RostislavArts/naysayer.nvim',
+        priority = 1000,
+        lazy = false
+    },
+    {
+         'nvim-lualine/lualine.nvim',
+         dependencies = { 'nvim-tree/nvim-web-devicons' }
     }
 }

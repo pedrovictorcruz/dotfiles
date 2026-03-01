@@ -1,0 +1,92 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("d:/Development/game-engine/Sandbox/" . "src/")
+ ("d:/Development/game-engine/Engine/src/" . "Platform/")
+ ("d:/Development/game-engine/Engine/" . "src/")
+ ("c:/Users/Pedro/AppData/Roaming/.emacs.d/" . "auto-save-list/")
+ ("d:/Development/game-engine/src/api/" . "vulkan/")
+ ("c:/Users/Pedro/AppData/Roaming/" . ".emacs.d/")
+ ("d:/Development/game-engine/src/" . "api/")
+ ("d:/Development/game-engine/" . "Engine/")
+ ("d:/Development/dotfiles/" . ".emacs.d/")
+ ("d:/Development/" . "game-engine/")
+ ("d:/" . "Development/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "d:/Development/game-engine/Engine/src/Platform/"
+ "d:/Development/game-engine/Sandbox/src/"
+ "d:/Development/game-engine/Sandbox/"
+ "d:/Development/game-engine/"
+ "d:/Development/game-engine/Engine/src/Backend/"
+ "c:/Users/Pedro/AppData/Roaming/.emacs.d/"
+ "d:/Development/game-engine/src/api/vulkan/"
+ "d:/Development/game-engine/src/application/"
+ "d:/Development/game-engine/src/"
+ "d:/Development/game-engine/src/core/"
+ "d:/Development/game-engine/src/API/"
+ "d:/Development/dotfiles/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "Window.cpp"
+ "Window.h"
+ "Main.cpp"
+ "CMakeLists.txt"
+ "Backend.h"
+ "init.el"
+ "vulkan_backend.c"
+ "application.c"
+ "main.c"
+ "application.h"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("d:/Development/game-engine/Engine/src/Platform/" (27018 36843 0 0) "Window.h" "Window.cpp" "../" "./")
+
+ ("d:/Development/game-engine/Sandbox/src/" (27016 35188 0 0) "Main.cpp" "../" "./")
+
+ ("d:/Development/game-engine/" (27018 33516 0 0) "vendors/" "Sandbox/" "README.md" "Engine/" "CMakeLists.txt" "build/" ".gitmodules" ".gitignore" ".git/" ".clang-format" "../" "./")
+
+ ("d:/Development/game-engine/Sandbox/" (27018 33503 0 0) "src/" "shaders/" "CMakeLists.txt" ".#CMakeLists.txt" "../" "./")
+
+ ("d:/Development/game-engine/Engine/src/Backend/" (27018 32115 0 0) "Backend.h" "../" "./")
+
+ ("d:/Development/game-engine/Engine/src/" (27018 32103 0 0) "Types.h" "Renderer/" "Platform/" "Core/" "Backend/" "../" "./")
+
+ ("d:/Development/game-engine/Engine/" (27016 33239 0 0) "src/" "CMakeLists.txt" "../" "./")
+
+ ("d:/Development/" (27016 3734 0 0) "game-engine/" "dotfiles/" "Donut/" "../" "./")
+
+ ("c:/Users/Pedro/AppData/Roaming/.emacs.d/auto-save-list/" (27018 33297 0 0) "../" "./")
+
+ ("c:/Users/Pedro/AppData/Roaming/.emacs.d/" (27018 33297 0 0) "transient/" "themes/" "server/" "modes/" "lisp/" "init.el.bak" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" "../" "./")
+
+ ("c:/Users/Pedro/AppData/Roaming/" (27014 24370 0 0) "Visual Studio Setup/" "uv/" "StardewValley/" "riot-client-ux/" "Riot Client/" "Postman/" "Path of Exile 2/" "NZXT CAM/" "NVIDIA/" "NuGet/" "Netease/" "Mozilla/" "Microsoft/" "lghub/" "JetBrains/" "GitHub Desktop/" "G HUB/" "Elgato/" "Electronic Arts/" "EA/" "discord/" "Code/" "Claude/" "CC/" "AMD/" "1Password/" ".emacs.d/" "../" "./")
+
+ ("d:/Development/game-engine/src/api/vulkan/" (26998 50701 0 0) "vulkan_types.h" "vulkan_device.h" "vulkan_device.c" "vulkan_backend.h" "vulkan_backend.c" "platform/" "../" "./")
+
+ ("d:/Development/game-engine/src/api/" (26989 33788 0 0) "vulkan/" "../" "./")
+
+ ("d:/Development/game-engine/src/platform/" (26998 51775 0 0) "window.h" "window.c" "../" "./")
+
+ ("d:/Development/game-engine/src/" (26998 32982 0 0) "renderer/" "platform/" "main.c" "core/" "application/" "api/" "../" "./")
+
+ ("d:/Development/game-engine/src/application/" (26996 9805 0 0) "application_types.h" "application_config.h" "application_config.c" "application.h" "application.c" "../" "./")
+
+ ("d:/Development/game-engine/src/core/" (26992 12221 0 0) "mouse_code.h" "logger.h" "logger.c" "key_code.h" "input.h" "input.c" "asserts.h" "../" "./")
+
+ ("d:/Development/game-engine/src/API/" (26989 33788 0 0) "vulkan/" "../" "./")
+
+ ("d:/Development/dotfiles/.emacs.d/" (26985 39657 0 0) "transient/" "themes/" "modes/" "lisp/" "init.el.bak" "init.el" "elpa/" ".gitignore" "../" "./")
+
+ ("d:/Development/dotfiles/" (26985 39100 0 0) "wezterm/" "tmux/" "nvim/" "i3status/" "i3/" "git/" "ghostty/" "alacritty/" ".zshrc" ".vim/" ".gitignore" ".git/" ".emacs.d/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

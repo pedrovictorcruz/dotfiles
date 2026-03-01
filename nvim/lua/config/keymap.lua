@@ -21,10 +21,20 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   end,
 })
 
-vim.keymap.set("n", "<A-c>", ":bd<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<Tab>", ":bn<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<S-Tab>", ":bp<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bn", ":bn<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bp", ":bp<CR>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
+
+vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor position" })
+
+vim.keymap.set("n", "<leader>td", function()
+	vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics" })
 
