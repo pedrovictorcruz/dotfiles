@@ -41,7 +41,7 @@
 ;; ---------------------------------------------------------------------------
 
 (require 'evil)
-(evil-mode 1)
+(evil-mode 0)
 
 (require 'evil-collection)
 (evil-collection-init)

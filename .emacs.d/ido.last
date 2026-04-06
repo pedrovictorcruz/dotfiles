@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("d:/Development/raylib-game/" . "src/")
  ("d:/Development/game-engine/Sandbox/" . "src/")
  ("d:/Development/game-engine/Engine/src/" . "Platform/")
  ("d:/Development/game-engine/Engine/" . "src/")
@@ -11,18 +12,19 @@
  ("d:/Development/game-engine/src/" . "api/")
  ("d:/Development/game-engine/" . "Engine/")
  ("d:/Development/dotfiles/" . ".emacs.d/")
- ("d:/Development/" . "game-engine/")
+ ("d:/Development/" . "raylib-game/")
  ("d:/" . "Development/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Users/Pedro/AppData/Roaming/.emacs.d/"
+ "d:/Development/raylib-game/src/"
  "d:/Development/game-engine/Engine/src/Platform/"
  "d:/Development/game-engine/Sandbox/src/"
  "d:/Development/game-engine/Sandbox/"
  "d:/Development/game-engine/"
  "d:/Development/game-engine/Engine/src/Backend/"
- "c:/Users/Pedro/AppData/Roaming/.emacs.d/"
  "d:/Development/game-engine/src/api/vulkan/"
  "d:/Development/game-engine/src/application/"
  "d:/Development/game-engine/src/"
@@ -33,20 +35,30 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "init.el"
+ "main.c"
  "Window.cpp"
  "Window.h"
  "Main.cpp"
  "CMakeLists.txt"
  "Backend.h"
- "init.el"
  "vulkan_backend.c"
  "application.c"
- "main.c"
  "application.h"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("d:/Development/raylib-game/src/" (27062 56210 0 0) "main.c" "../" "./")
+
+ ("c:/Users/Pedro/AppData/Roaming/.emacs.d/" (27044 5716 0 0) "transient/" "themes/" "server/" "projects" "modes/" "lisp/" "init.el.bak" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" "../" "./")
+
+ ("c:/Users/Pedro/AppData/Roaming/" (27062 15810 0 0) "Visual Studio Setup/" "uv/" "StardewValley/" "riot-client-ux/" "Riot Client/" "Postman/" "Pixel Art Academy Learn Mode/" "Path of Exile 2/" "OpenCode/" "NZXT CAM/" "NVIDIA/" "NuGet/" "npm/" "Netease/" "Mozilla/" "Microsoft/" "lghub/" "JetBrains/" "Godot/" "Glaiel Games/" "GitKraken/" "GitHub Desktop/" "G HUB/" "Elgato/" "Electronic Arts/" "EA/" "down-with-the-ship/" "discord/" "Cursor/" "Code/" "Claude/" "CC/" "Bungie/" "Battlestate Games/" "Battle.net/" "Aseprite/" "AMD/" "1Password/" ".gitkraken/" ".emacs.d/" "../" "./")
+
+ ("d:/Development/raylib-game/" (27062 18502 0 0) "vendors/" "src/" "CMakeLists.txt" "build/" "assets/" ".gitmodules" ".git/" ".cache/" "../" "./")
+
+ ("d:/Development/" (27062 17447 0 0) "vscode-workspaces/" "raylib-game/" "godot-example/" "game-engine/" "dotfiles/" "../" "./")
+
  ("d:/Development/game-engine/Engine/src/Platform/" (27018 36843 0 0) "Window.h" "Window.cpp" "../" "./")
 
  ("d:/Development/game-engine/Sandbox/src/" (27016 35188 0 0) "Main.cpp" "../" "./")
@@ -61,13 +73,7 @@
 
  ("d:/Development/game-engine/Engine/" (27016 33239 0 0) "src/" "CMakeLists.txt" "../" "./")
 
- ("d:/Development/" (27016 3734 0 0) "game-engine/" "dotfiles/" "Donut/" "../" "./")
-
  ("c:/Users/Pedro/AppData/Roaming/.emacs.d/auto-save-list/" (27018 33297 0 0) "../" "./")
-
- ("c:/Users/Pedro/AppData/Roaming/.emacs.d/" (27018 33297 0 0) "transient/" "themes/" "server/" "modes/" "lisp/" "init.el.bak" "init.el" "ido.last" "elpa/" "auto-save-list/" ".gitignore" "../" "./")
-
- ("c:/Users/Pedro/AppData/Roaming/" (27014 24370 0 0) "Visual Studio Setup/" "uv/" "StardewValley/" "riot-client-ux/" "Riot Client/" "Postman/" "Path of Exile 2/" "NZXT CAM/" "NVIDIA/" "NuGet/" "Netease/" "Mozilla/" "Microsoft/" "lghub/" "JetBrains/" "GitHub Desktop/" "G HUB/" "Elgato/" "Electronic Arts/" "EA/" "discord/" "Code/" "Claude/" "CC/" "AMD/" "1Password/" ".emacs.d/" "../" "./")
 
  ("d:/Development/game-engine/src/api/vulkan/" (26998 50701 0 0) "vulkan_types.h" "vulkan_device.h" "vulkan_device.c" "vulkan_backend.h" "vulkan_backend.c" "platform/" "../" "./")
 
