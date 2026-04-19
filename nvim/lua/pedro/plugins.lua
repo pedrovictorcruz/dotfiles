@@ -2,7 +2,7 @@ return {
     { 
         "nvim-treesitter/nvim-treesitter", 
         lazy = false,
-        run = ":TSUpdate" 
+        build = ":TSUpdate" 
     },
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
@@ -22,7 +22,7 @@ return {
         }
     },
     {
-        'RostislavArts/naysayer.nvim',
+        'blazkowolf/gruber-darker.nvim',
         priority = 1000,
         lazy = false
     },
@@ -31,25 +31,36 @@ return {
          dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
     {
-        'kvrohit/rasmus.nvim',
-        priority = 1000,
-        lazy = false
-    },
-    {
-        'hrsh7th/nvim-cmp',
-        dependencies = {
-            'hrsh7th/cmp-nvim-lsp',
-            'hrsh7th/cmp-buffer',
-            'hrsh7th/cmp-path',
-            'L3MON4D3/LuaSnip',
-            'saadparwaiz1/cmp_luasnip',
-        },
-    },
-    {
-        'romgrk/barbar.nvim',
-        dependencies = {
-            'lewis6991/gitsigns.nvim',
-            'nvim-tree/nvim-web-devicons',
+        'saghen/blink.cmp',
+        dependencies = 'rafamadriz/friendly-snippets',
+
+        version = 'v0.*',
+
+        opts = {
+            keymap = {
+                preset = 'none',
+                ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+                ['<Tab>'] = { 'select_and_accept', 'snippet_forward', 'fallback' },
+                ['<C-n>'] = { 'select_next', 'fallback_to_mappings' },
+                ['<C-p>'] = { 'select_prev', 'fallback_to_mappings' },
+                ['<CR>'] = { 'accept', 'fallback' },
+            },
+
+            completion = {
+                list = {
+                    selection = {
+                        preselect = false,
+                        auto_insert = false,
+                    },
+                },
+            },
+
+            appearance = {
+                use_nvim_cmp_as_default = true,
+                nerd_font_variant = 'mono'
+            },
+
+            signature = { enabled = true }
         },
     },
 }

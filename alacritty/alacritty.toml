@@ -9,7 +9,7 @@ blinking = "Always"
 shape = "Block"
 
 [font.normal]
-family = "Comic Code"
+family = "JetBrainsMono Nerd Font"
 
 [font]
 builtin_box_drawing = true
@@ -27,7 +27,12 @@ multiplier = 4
 bindings = [
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
 { key = "L", mods = "Control|Shift", chars = "l" },
+{ key = "Return", mods = "Shift", chars = "\n"},
 ]
 
 [window]
 option_as_alt = "Both"
+
+[window.dimensions]
+columns = 120
+lines = 30

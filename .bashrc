@@ -9,8 +9,8 @@ esac
 export EDITOR='vim'
 export GREP_COLOR='1;36'
 export HISTCONTROL='ignoredups'
-export HISTSIZE=5000
-export HISTFILESIZE=5000
+export HISTSIZE=50000
+export HISTFILESIZE=50000
 export LSCOLORS='ExGxbEaECxxEhEhBaDaCaD'
 export PAGER='less'
 export TZ='America/Sao_Paulo'
@@ -83,7 +83,7 @@ PS1+='$(branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null); [[ -n $branch ]] 
 PS1+='\[${PROMPT_COLORS[0]}\]\$\[${COLOR256[256]}\] '
 
 # set the theme
-set_prompt_colors 24
+set_prompt_colors 23
 
 # Prompt command
 _prompt_command() {
@@ -115,7 +115,6 @@ fi
 
 # Aliases
 alias ..='echo "cd .."; cd ..'
-alias ag='rg' # sorry silver searcher
 alias chomd='chmod'
 alias externalip='curl -sS https://ysap.sh/ip'
 alias gerp='grep'
@@ -135,18 +134,18 @@ fi
 alias nb='git checkout -b "$USER-$(date +%s)"' # new branch
 alias ga='git add . --all'
 alias gb='git branch'
-alias gc='git clone'
+alias gcl='git clone'
 alias gci='git commit -a'
 alias gco='git checkout'
 alias gd="git diff ':!*lock'"
 alias gdf='git diff' # git diff (full)
 alias gi='git init'
-alias gl='git log'
+alias gll='git log'
 alias gp='git push origin HEAD'
 alias gr='git rev-parse --show-toplevel' # git root
 alias gs='git status'
 alias gt='git tag'
-alias gu='git pull' # gu = git update
+alias gl='git pull' # gu = git update
 
 # Load external files
 . ~/.bash_aliases    2>/dev/null || true
@@ -168,7 +167,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-. "$HOME/.local/bin/env"
+export SDKMAN_DIR="/home/pedro/.sdkman"
+[[ -s "/home/pedro/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pedro/.sdkman/bin/sdkman-init.sh"
+. "$HOME/.cargo/env"

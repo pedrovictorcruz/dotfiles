@@ -1,143 +1,158 @@
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# Only interactive
+[[ -o interactive ]] || return
 
-export ZSH="$HOME/.oh-my-zsh"
+# ===== PATH =====
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$PATH:$HOME/developer/flutter/bin"
 
-ZSH_THEME="half-life"
+# ===== ENV =====
+export EDITOR='vim'
+export TZ='America/Sao_Paulo'
+export GREP_COLORS='mt=1;36'
+export HISTSIZE=50000
+export SAVEHIST=50000
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
 
-plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
-source $ZSH/oh-my-zsh.sh
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
 
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-ZSH_HIGHLIGHT_MAXLENGTH=120
-
-# Rainbow brackets in special order, easier for eyes
-ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=magenta'
-ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=green'
-ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=blue'
-ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=yellow'
-ZSH_HIGHLIGHT_STYLES[bracket-level-5]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[bracket-level-6]='fg=red'
-
-# Custom styles
-# Errors
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red,underline'
-
-# Keywords
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=blue'
-
-# Commands
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=magenta'
-ZSH_HIGHLIGHT_STYLES[global-alias]='fg=magenta'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=magenta'
-
-# Strings
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=green'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=green'
-ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=yellow'
-
-# Redirections
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=cyan'
-
-# Paths
-ZSH_HIGHLIGHT_STYLES[path]='none'
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#606090'
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=40
-
-if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-	startx
+# ===== LESS COLORS =====
+if [[ -t 1 && -n "$TERM" && "$TERM" != "dumb" ]]; then
+  export LESS_TERMCAP_mb=$(tput bold; tput setaf 1)
+  export LESS_TERMCAP_md=$(tput bold; tput setaf 1)
+  export LESS_TERMCAP_me=$(tput sgr0)
+  export LESS_TERMCAP_se=$(tput sgr0)
+  export LESS_TERMCAP_so=$(tput bold; tput setaf 3; tput setab 4)
+  export LESS_TERMCAP_ue=$(tput sgr0)
+  export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 2)
 fi
 
-cdfzf() {
-    local BASE_DIRS=(
-        "$HOME/Developer"
-        "$HOME/workspace"
-        "$HOME/.config"
-    )
+# ===== PROMPT (SIMPLES + ESTÁVEL) =====
+setopt PROMPT_SUBST
 
-    # Coleta todos os subdiretórios com depth=1 de cada diretório base
-    local DIRS=()
-    for base in "${BASE_DIRS[@]}"; do
-        if [[ -d "$base" ]]; then
-            while IFS= read -r dir; do
-                DIRS+=("$dir")
-            done < <(find "$base" -mindepth 1 -maxdepth 1 -type d 2>/dev/null)
-        fi
-    done
+RED='%F{1}'
+PURPLE='%F{5}'
+BLUE='%F{4}'
+GREEN='%F{2}'
+RESET='%f'
+BOLD='%B'
+NOBOLD='%b'
 
-    # Usa o fzf para selecionar
-    local SELECTED=$(printf "%s\n" "${DIRS[@]}" | fzf --prompt="Escolha um diretório: ")
-    if [[ -n "$SELECTED" ]]; then
-        cd "$SELECTED" || return
-        clear
-    fi
+PROMPT='${PURPLE}${BOLD}%n${RESET}@${BLUE}%m ${GREEN}%~ '
+
+PROMPT+='$(branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null); [[ -n $branch ]] && echo "${PURPLE}(git:${branch}) ")'
+
+PROMPT+='${PURPLE}$ ${RESET}'
+
+# ===== WINDOW TITLE =====
+precmd() {
+  print -Pn "\e]0;%n@%m:%~\a"
 }
 
-# Aliases: git
+# ===== ZSH OPTIONS =====
+setopt NO_CASE_GLOB
+setopt CORRECT
+setopt AUTO_CD
+
+# ===== COMPLETION =====
+autoload -Uz compinit
+compinit
+
+# ===== LS COLORS =====
+if command -v dircolors >/dev/null; then
+  eval "$(dircolors -b 2>/dev/null)"
+  alias ls='ls -p --color=auto'
+else
+  alias ls='ls -p -G'
+fi
+
+# ===== AUTOSTART X =====
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+  startx
+fi
+
+# ===== KEYS =====
+bindkey '^R' fzf-history-widget
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
+
+bindkey '^[[1;5D' backward-word
+bindkey '^[[5D' backward-word
+
+bindkey '^[[1;5C' forward-word
+bindkey '^[[5C' forward-word
+
+# Undo
+bindkey '^_' undo        # Ctrl + _
+bindkey '^Z' undo        # opcional (override do suspend)
+
+# Redo
+bindkey '^[r' redo       # Alt + r
+
+# ===== FZF FUNCTION =====
+cdfzf() {
+  local BASE_DIRS=("$HOME/development" "$HOME/workspace" "$HOME/.config")
+  local DIRS=()
+
+  for base in "${BASE_DIRS[@]}"; do
+    [[ -d "$base" ]] || continue
+    while IFS= read -r dir; do
+      DIRS+=("$dir")
+    done < <(find "$base" -mindepth 1 -maxdepth 1 -type d 2>/dev/null)
+  done
+
+  local SELECTED
+  SELECTED=$(printf "%s\n" "${DIRS[@]}" | fzf)
+  [[ -n "$SELECTED" ]] && cd "$SELECTED"
+}
+alias f="cdfzf"
+
+# ===== GIT ALIASES =====
 alias gs="git status --short"
 alias gd='git diff --output-indicator-new=" " --output-indicator-old=" "'
-
 alias ga="git add"
 alias gc="git commit"
-
 alias gp="git push"
 alias gu="git pull"
-
 alias gl='git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(blue)  %D%n%s%n"'
 alias gb="git branch"
-
 alias gi="git init"
 alias gcl='git clone --recursive'
 
-alias f="cdfzf"
+alias l='eza'
+alias ll='eza -lha'
 
+alias hx='helix'
 
-alias tmux-sessionizer="~/Developer/tmux-sessionizer/tmux-sessionizer"
+source /usr/share/fzf/key-bindings.zsh
 
+# ===== NVM =====
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
 autoload -U add-zsh-hook
-
 load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
-
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      nvm install
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use
-    fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
+  local nvmrc_path="$(nvm_find_nvmrc 2>/dev/null)"
+  [[ -n "$nvmrc_path" ]] && nvm use >/dev/null
 }
-
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+# ===== PYENV =====
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-
 eval "$(pyenv init - zsh)"
-eval "$(rbenv init -)"
 
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/pedrocruz/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
-
-export PATH="$PATH:$HOME/Developer/flutter/bin"
-
-# SDKMAN
+# ===== SDKMAN =====
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# opencode
+export PATH=/home/pedro/.opencode/bin:$PATH

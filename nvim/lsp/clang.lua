@@ -1,6 +1,6 @@
 return {
 	name = "clang",
-    cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
+    cmd = {'clangd', '--background-index', '--clang-tidy'},
 	filetypes = {
 		"c",
         "cpp"
