@@ -63,4 +63,8 @@ return {
             signature = { enabled = true }
         },
     },
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+    }
 }
