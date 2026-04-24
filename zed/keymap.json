@@ -1,0 +1,55 @@
+// documentation: https://zed.dev/docs/key-bindings
+[
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
+  },
+  {
+    "context": "EmptyPane || ProjectPanel || (Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting)",
+    "bindings": {
+      "space f": "file_finder::Toggle",
+      "space /": "project_search::ToggleFocus",
+      "space b": "tab_switcher::Toggle",
+      "space b n": "pane::ActivateNextItem",
+      "space b p": "pane::ActivatePreviousItem",
+      "space d": "diagnostics::DeployCurrentFile",
+      "space p v": "project_panel::ToggleFocus",
+      "space e": "workspace::ToggleRightDock",
+      "space p": "file_finder::Toggle",
+      "space t": "tab_switcher::Toggle",
+      "space s s": "zed::OpenSettingsFile",
+      "space s k": "zed::OpenKeymapFile",
+      "space l d": "diagnostics::Deploy",
+    },
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "K": "editor::Hover",
+      "space s h": "pane::SplitVertical",
+      "space s v": "pane::SplitHorizontal",
+      "space l a": "editor::ToggleCodeActions",
+      "space l f": "editor::Format",
+      "space l r": "editor::Rename",
+      "space l s": "outline::Toggle",
+      "space o": "outline::Toggle",
+      "g d": "editor::GoToDefinition",
+      "g D": "editor::GoToDeclaration",
+      "g I": "editor::GoToImplementation",
+      "g c c": "vim::ToggleComments",
+      "g R": "editor::FindAllReferences",
+      "g r": "editor::FindAllReferences",
+      "g y": "editor::GoToTypeDefinition",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+    },
+  },
+]

@@ -1,5 +1,6 @@
 local builtin = require('telescope.builtin')
 local entry_display = require('telescope.pickers.entry_display')
+local action_state = require('telescope.actions.state')
 
 local function tail_path(path, max_len)
     max_len = max_len or 60
@@ -10,8 +11,19 @@ local function tail_path(path, max_len)
     return '...' .. path:sub(-(max_len - 3))
 end
 
+local function get_results_width()
+    local ok, picker = pcall(action_state.get_current_picker, vim.api.nvim_get_current_buf())
+    if ok and picker and picker.results_win and vim.api.nvim_win_is_valid(picker.results_win) then
+        return vim.api.nvim_win_get_width(picker.results_win)
+    end
+
+    local total = math.floor(vim.o.columns * 0.9)
+    local preview = math.floor(total * 0.5)
+    return total - preview
+end
+
 local function result_path_len(with_position)
-    local len = math.floor(vim.o.columns * 0.42) - 2
+    local len = get_results_width() - 2
     if with_position then
         len = len - 12
     end
@@ -35,7 +47,7 @@ end
 local find_files_displayer = entry_display.create({
     separator = '',
     items = {
-        { remaining = true },
+        {},
         { remaining = true },
     },
 })
@@ -44,7 +56,7 @@ local live_grep_displayer = entry_display.create({
     separator = '',
     items = {
         { width = 10 },
-        { remaining = true },
+        {},
         { remaining = true },
     },
 })
